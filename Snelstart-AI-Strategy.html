@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Designing with AI, at scale — Nadja Gurk</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B0B0C'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='34' font-weight='800' text-anchor='middle'%3E%3Ctspan fill='white'%3En%3C/tspan%3E%3Ctspan fill='%232B7BF6'%3E.%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+  :root{ color-scheme: light; }
+  html{ scroll-behavior: smooth; }
+  body{ margin:0; background:#FFFFFF; color:#0B0B0C; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; overflow-x:clip; -webkit-font-smoothing:antialiased; }
+  ::selection{ background:#2E7DF7; color:#fff; }
+  a{ color:inherit; }
+  .wrap{ max-width:1140px; margin:0 auto; padding:0 6vw; }
+  .reveal{ opacity:0; transform:translateY(28px); transition:opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
+  .reveal.in{ opacity:1; transform:none; }
+  .eyebrow{ display:inline-flex; align-items:center; gap:9px; font-size:13px; font-weight:800; letter-spacing:0.16em; color:#0B0B0C; }
+  .eyebrow .dot{ color:#2E7DF7; font-size:18px; }
+  .sec{ padding:clamp(72px,10vw,132px) 0; }
+  .ph{ border-radius:16px; background:linear-gradient(135deg,#eaf1ff,#d3e2ff); border:1px dashed rgba(43,123,246,.5); display:flex; align-items:center; justify-content:center; color:#3b6fd0; font-weight:700; font-size:14px; text-align:center; padding:16px; box-sizing:border-box; }
+  .backbtn{ position:fixed; top:22px; left:22px; z-index:101; display:inline-flex; align-items:center; gap:8px; padding:10px 18px 10px 15px; background:rgba(255,255,255,0.82); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); border:1px solid rgba(20,40,80,0.10); border-radius:999px; box-shadow:0 10px 28px rgba(20,40,80,0.12); text-decoration:none; color:#0B0B0C; font-weight:700; font-size:14px; transition:transform .3s cubic-bezier(.16,1,.3,1); }
+  .backbtn:hover{ transform:translateX(-3px); }
+  .live{ display:inline-flex; align-items:center; gap:8px; font-weight:800; }
+  .live-dot{ width:9px; height:9px; border-radius:50%; background:#16A34A; box-shadow:0 0 0 0 rgba(22,163,74,.5); animation:pulse 1.7s infinite; }
+  @keyframes pulse{ 0%{ box-shadow:0 0 0 0 rgba(22,163,74,.5);} 70%{ box-shadow:0 0 0 9px rgba(22,163,74,0);} 100%{ box-shadow:0 0 0 0 rgba(22,163,74,0);} }
+  .cta{ display:inline-flex; align-items:center; gap:10px; padding:13px 26px; border-radius:999px; font-weight:700; font-size:16px; text-decoration:none; position:relative; overflow:hidden; isolation:isolate; border:1.5px solid; }
+  .cta > span{ position:relative; z-index:1; }
+  .cta.on-dark{ color:#fff; border-color:rgba(255,255,255,0.35); }
+  .cta.on-dark::before{ content:''; position:absolute; inset:0; background:#2B7BF6; transform:scaleX(0); transform-origin:left center; transition:transform .45s cubic-bezier(.16,1,.3,1); z-index:0; }
+  .cta.on-dark:hover::before{ transform:scaleX(1); }
+  .cta .ar{ transition:transform .35s cubic-bezier(.16,1,.3,1); }
+  .cta:hover .ar{ transform:translateX(4px); }
+  h1,h2,h3{ letter-spacing:-0.025em; }
+  .pill{ padding:9px 16px; background:#fff; border:1px solid rgba(43,123,246,.25); border-radius:999px; font-weight:700; font-size:14px; color:#2B6FD0; }
+  @media (max-width:820px){ .grid2{ grid-template-columns:1fr !important; } .research3{ grid-template-columns:1fr !important; } .feat{ flex-direction:column !important; } .feat .ph{ width:100% !important; } .tl-row{ flex-direction:column !important; gap:8px !important; } .tl-row > div:first-child{ flex-basis:auto !important; } }
+</style>
+</head>
+<body>
+
+<a href="index.html#work" class="backbtn">← Back</a>
+
+<header class="sec" style="padding-top:clamp(120px,15vw,180px);">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:20px;"><span class="dot">✦</span> UX × AI STRATEGY · SNELSTART</div>
+    <h1 class="reveal" style="margin:0; font-weight:800; font-size:clamp(42px,7vw,104px); line-height:0.98; max-width:15ch;">Making AI part of how Snelstart designs.</h1>
+    <p class="reveal" style="margin:28px 0 0; color:#3A3E44; font-weight:500; font-size:clamp(18px,1.9vw,25px); line-height:1.5; max-width:760px;">I wrote Snelstart's UX × AI strategy, introduced Claude across the design org, and built the skills and training to make it stick — so teams design faster and keep one consistent experience as Snelstart grows across ventures.</p>
+
+    <div class="reveal" style="display:flex; flex-wrap:wrap; gap:22px 46px; margin-top:44px;">
+      <div><div style="font-size:12px; font-weight:800; letter-spacing:0.14em; color:#9AA3A3;">ROLE</div><div style="font-weight:700; margin-top:6px;">UX/UI Designer · AI enablement</div></div>
+      <div><div style="font-size:12px; font-weight:800; letter-spacing:0.14em; color:#9AA3A3;">TOOLS</div><div style="font-weight:700; margin-top:6px;">Claude, Figma, Miro</div></div>
+      <div><div style="font-size:12px; font-weight:800; letter-spacing:0.14em; color:#9AA3A3;">STATUS</div><div class="live" style="margin-top:6px;"><span class="live-dot"></span> Ongoing</div></div>
+      <div><div style="font-size:12px; font-weight:800; letter-spacing:0.14em; color:#9AA3A3;">YEAR</div><div style="font-weight:700; margin-top:6px;">2025</div></div>
+    </div>
+
+    <div class="reveal" style="margin-top:clamp(44px,6vw,72px); position:relative; border-radius:24px; overflow:hidden; background:linear-gradient(180deg,#2B7BF6,#5C9BFA); padding:clamp(28px,5vw,56px);">
+      <div class="ph" style="height:clamp(260px,32vw,420px); background:linear-gradient(135deg,#fff,#eef4ff); border-color:rgba(255,255,255,.5); color:#2b6fd0; border-radius:16px;">UX × AI strategy — overview</div>
+    </div>
+  </div>
+</header>
+
+<section class="sec" style="padding-top:0;">
+  <div class="wrap">
+    <div class="grid2 reveal" style="display:grid; grid-template-columns:0.85fr 1.15fr; gap:clamp(28px,5vw,80px); align-items:start;">
+      <div>
+        <div class="eyebrow" style="margin-bottom:16px;"><span class="dot">✦</span> WHY IT MATTERED</div>
+        <h2 style="margin:0; font-weight:800; font-size:clamp(30px,3.8vw,52px); line-height:1.06;">UX is changing — and that's a chance, not a threat.</h2>
+      </div>
+      <div style="color:#3A3E44; font-size:clamp(16px,1.4vw,19px); line-height:1.7;">
+        <p style="margin:0 0 18px;">AI is reshaping our profession. Rather than treat that as a threat, I see a chance: with the right skills and a design system that's genuinely shared, we can rethink who does what — and free designers to spend their time where it matters most.</p>
+        <p style="margin:0;">For a company scaling from a bookkeeping package into a total solution across ventures, that means moving faster and staying consistent <em>without</em> simply hiring more designers. Tools alone won't get you there — strategy, shared tooling and an enabled team will. So I set out to give it direction.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:#F5F8FF;">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">✦</span> WHAT I SET UP</div>
+    <h2 class="reveal" style="margin:0 0 clamp(40px,6vw,64px); font-weight:800; font-size:clamp(28px,3.8vw,50px); line-height:1.06; max-width:720px;">Strategy, tooling, and a team that can run it.</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:clamp(16px,2.5vw,26px);">
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#2E7DF7; font-size:15px; margin-bottom:8px;">01</div><div style="font-weight:800; font-size:19px;">A UX × AI strategy</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">A written strategy for where and how AI supports design, quality and consistency at Snelstart.</div></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#2E7DF7; font-size:15px; margin-bottom:8px;">02</div><div style="font-weight:800; font-size:19px;">Claude, introduced</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">Brought Claude into the org and built fitting, Snelstart-specific skills for real design work.</div></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#2E7DF7; font-size:15px; margin-bottom:8px;">03</div><div style="font-weight:800; font-size:19px;">Team enablement</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">Hands-on trainings for UX designers and product owners, so adoption sticks.</div></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#2E7DF7; font-size:15px; margin-bottom:8px;">04</div><div style="font-weight:800; font-size:19px;">Consistency across ventures</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">A plan for using AI to keep one coherent experience across new products and markets.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">✦</span> A NEW WAY OF WORKING</div>
+    <h2 class="reveal" style="margin:0 0 14px; font-weight:800; font-size:clamp(28px,3.8vw,50px); line-height:1.06; max-width:760px;">POs fix the small stuff — with UX in the loop where it counts.</h2>
+    <p class="reveal" style="margin:0 0 clamp(36px,5vw,56px); color:#3A3E44; font-size:clamp(16px,1.4vw,19px); line-height:1.65; max-width:760px;">By communicating the design system widely and packaging it into Claude skills, product owners can now resolve smaller, repetitive design issues themselves — with a UXer at the start and end of the flow, where judgement matters most.</p>
+    <div style="display:flex; flex-direction:column; gap:clamp(20px,3vw,32px);">
+    <div class="tl-row reveal" style="display:flex; gap:clamp(20px,3vw,44px); align-items:flex-start;">
+      <div style="flex:0 0 210px;"><div style="color:#2B7BF6; font-weight:800; font-size:clamp(20px,2vw,26px);">01 · Define &amp; spar</div><div style="margin-top:10px;"><span style="display:inline-block; padding:6px 13px; border-radius:999px; font-weight:800; font-size:12px; letter-spacing:0.04em; background:#EAF1FE; color:#2B6FD0;">UXer + PO</span></div></div>
+      <div style="flex:1; border-top:1px solid #E1E7EF; padding-top:14px;"><div style="font-weight:800; font-size:clamp(18px,1.8vw,22px);">Frame it together</div><div style="color:#5C6066; font-size:16px; line-height:1.6; margin-top:8px;">We define the problem together and spar on first ideas — the thinking that genuinely needs a designer.</div></div>
+    </div>
+    <div class="tl-row reveal" style="display:flex; gap:clamp(20px,3vw,44px); align-items:flex-start;">
+      <div style="flex:0 0 210px;"><div style="color:#2B7BF6; font-weight:800; font-size:clamp(20px,2vw,26px);">02 · PO builds it</div><div style="margin-top:10px;"><span style="display:inline-block; padding:6px 13px; border-radius:999px; font-weight:800; font-size:12px; letter-spacing:0.04em; background:#EAF1FE; color:#2B6FD0;">PO + Claude skills</span></div></div>
+      <div style="flex:1; border-top:1px solid #E1E7EF; padding-top:14px;"><div style="font-weight:800; font-size:clamp(18px,1.8vw,22px);">Resolve the smaller issues</div><div style="color:#5C6066; font-size:16px; line-height:1.6; margin-top:8px;">Using the Snelstart design system and the “UX at Snelstart” skills, the PO fixes smaller, repetitive issues themselves — work that would otherwise cost a UXer time.</div></div>
+    </div>
+    <div class="tl-row reveal" style="display:flex; gap:clamp(20px,3vw,44px); align-items:flex-start;">
+      <div style="flex:0 0 210px;"><div style="color:#2B7BF6; font-weight:800; font-size:clamp(20px,2vw,26px);">03 · Skill-assisted review</div><div style="margin-top:10px;"><span style="display:inline-block; padding:6px 13px; border-radius:999px; font-weight:800; font-size:12px; letter-spacing:0.04em; background:#EAF1FE; color:#2B6FD0;">Claude review skill</span></div></div>
+      <div style="flex:1; border-top:1px solid #E1E7EF; padding-top:14px;"><div style="font-weight:800; font-size:clamp(18px,1.8vw,22px);">Protect the essentials</div><div style="color:#5C6066; font-size:16px; line-height:1.6; margin-top:8px;">A dedicated review skill checks the work against general UX principles and, above all, the Snelstart design system.</div></div>
+    </div>
+    <div class="tl-row reveal" style="display:flex; gap:clamp(20px,3vw,44px); align-items:flex-start;">
+      <div style="flex:0 0 210px;"><div style="color:#2B7BF6; font-weight:800; font-size:clamp(20px,2vw,26px);">04 · Review &amp; refine</div><div style="margin-top:10px;"><span style="display:inline-block; padding:6px 13px; border-radius:999px; font-weight:800; font-size:12px; letter-spacing:0.04em; background:#EAF1FE; color:#2B6FD0;">UXer + PO + team</span></div></div>
+      <div style="flex:1; border-top:1px solid #E1E7EF; padding-top:14px;"><div style="font-weight:800; font-size:clamp(18px,1.8vw,22px);">Finish it together</div><div style="color:#5C6066; font-size:16px; line-height:1.6; margin-top:8px;">Designer and PO review together and refine with the team before it ships.</div></div>
+    </div>
+    </div>
+    <p class="reveal" style="margin:clamp(34px,4vw,48px) 0 0; color:#0B0B0C; font-weight:700; font-size:clamp(17px,1.5vw,20px); line-height:1.5; max-width:760px;">The result: designers spend less time on repetitive fixes and stay available across more projects at once.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">✦</span> APPROACH, IN SHORT</div>
+    <h2 class="reveal" style="margin:0 0 14px; font-weight:800; font-size:clamp(28px,3.8vw,50px); line-height:1.06; max-width:720px;">Make it practical, not theoretical.</h2>
+    <p class="reveal" style="margin:0 0 clamp(34px,4vw,50px); color:#3A3E44; font-size:clamp(16px,1.4vw,19px); line-height:1.65; max-width:720px;">A strategy nobody uses is just a document. So I paired the vision with concrete tools and training, and grounded everything in real Snelstart work.</p>
+
+    <div class="reveal" style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:36px;">
+      <span class="pill">Strategy &amp; vision doc</span>
+      <span class="pill">Custom Claude skills</span>
+      <span class="pill">Designer &amp; PO trainings</span>
+      <span class="pill">Playbooks &amp; guidelines</span>
+      <span class="pill">Pilots on real work</span>
+    </div>
+
+    <div class="research3" style="display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(16px,2.5vw,26px);">
+      <div class="reveal" style="border-top:2px solid #2B7BF6; padding-top:16px;"><div style="font-weight:800; font-size:clamp(30px,3.6vw,46px); color:#2B7BF6; line-height:1;">Skills</div><div style="font-weight:700; margin-top:8px;">a growing library</div><div style="color:#5C6066; font-size:14px; margin-top:4px;">reusable, Snelstart-specific.</div></div>
+      <div class="reveal" style="border-top:2px solid #2B7BF6; padding-top:16px;"><div style="font-weight:800; font-size:clamp(30px,3.6vw,46px); color:#2B7BF6; line-height:1;">2</div><div style="font-weight:700; margin-top:8px;">groups trained</div><div style="color:#5C6066; font-size:14px; margin-top:4px;">designers &amp; product owners.</div></div>
+      <div class="reveal" style="border-top:2px solid #2B7BF6; padding-top:16px;"><div style="font-weight:800; font-size:clamp(30px,3.6vw,46px); color:#2B7BF6; line-height:1;">1</div><div style="font-weight:700; margin-top:8px;">consistent experience</div><div style="color:#5C6066; font-size:14px; margin-top:4px;">the goal across every venture.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:linear-gradient(180deg,#2B7BF6 0%,#4E92F8 100%); color:#fff;">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="color:#fff; margin-bottom:14px;"><span class="dot" style="color:#fff;">✦</span> WHAT I SET OUT TO DO</div>
+    <h2 class="reveal" style="margin:0 0 clamp(40px,6vw,64px); color:#fff; font-weight:800; font-size:clamp(28px,4vw,52px); line-height:1.06; max-width:760px;">Turn AI from a buzzword into a way of working.</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:clamp(16px,2.5vw,26px);">
+      <div class="reveal" style="background:rgba(255,255,255,0.12); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,0.24); border-radius:20px; padding:26px;"><div style="font-weight:800; font-size:20px; color:#fff;">01</div><div style="font-weight:800; font-size:19px; margin-top:12px;">Give AI direction</div><div style="color:rgba(255,255,255,0.85); font-size:15px; margin-top:8px; line-height:1.55;">A clear, shared view of where AI helps — and where it doesn't.</div></div>
+      <div class="reveal" style="background:rgba(255,255,255,0.12); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,0.24); border-radius:20px; padding:26px;"><div style="font-weight:800; font-size:20px; color:#fff;">02</div><div style="font-weight:800; font-size:19px; margin-top:12px;">Upskill the team</div><div style="color:rgba(255,255,255,0.85); font-size:15px; margin-top:8px; line-height:1.55;">Get designers and POs confident and hands-on, not just curious.</div></div>
+      <div class="reveal" style="background:rgba(255,255,255,0.12); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,0.24); border-radius:20px; padding:26px;"><div style="font-weight:800; font-size:20px; color:#fff;">03</div><div style="font-weight:800; font-size:19px; margin-top:12px;">Design faster</div><div style="color:rgba(255,255,255,0.85); font-size:15px; margin-top:8px; line-height:1.55;">Prototype, validate and iterate quicker with AI in the loop.</div></div>
+      <div class="reveal" style="background:rgba(255,255,255,0.12); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,0.24); border-radius:20px; padding:26px;"><div style="font-weight:800; font-size:20px; color:#fff;">04</div><div style="font-weight:800; font-size:19px; margin-top:12px;">Stay consistent at scale</div><div style="color:rgba(255,255,255,0.85); font-size:15px; margin-top:8px; line-height:1.55;">Keep ventures feeling like one Snelstart as the product grows.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">✦</span> KEY MOVES</div>
+    <h2 class="reveal" style="margin:0 0 clamp(44px,6vw,72px); font-weight:800; font-size:clamp(28px,4vw,52px); line-height:1.06; max-width:760px;">The decisions that made it stick.</h2>
+
+    <div class="feat reveal" style="display:flex; gap:clamp(24px,4vw,56px); align-items:center; margin-bottom:clamp(40px,6vw,72px);">
+      <div style="flex:1;">
+        <div style="color:#2B7BF6; font-weight:800; font-size:15px; margin-bottom:10px;">Move 01</div>
+        <h3 style="margin:0 0 12px; font-weight:800; font-size:clamp(22px,2.4vw,32px);">Skills, not one-off prompts</h3>
+        <p style="margin:0; color:#3A3E44; font-size:16px; line-height:1.65;">I built reusable Claude skills tuned to Snelstart — its design system, tone of voice and review process — so good output is repeatable, not down to who wrote the best prompt that day.</p>
+      </div>
+      <div class="ph" style="flex:1; height:clamp(240px,26vw,340px);">Snelstart Claude skills</div>
+    </div>
+
+    <div class="feat reveal" style="display:flex; flex-direction:row-reverse; gap:clamp(24px,4vw,56px); align-items:center; margin-bottom:clamp(40px,6vw,72px);">
+      <div style="flex:1;">
+        <div style="color:#2B7BF6; font-weight:800; font-size:15px; margin-bottom:10px;">Move 02</div>
+        <h3 style="margin:0 0 12px; font-weight:800; font-size:clamp(22px,2.4vw,32px);">Bring POs along, not just designers</h3>
+        <p style="margin:0; color:#3A3E44; font-size:16px; line-height:1.65;">Training product owners as well as designers meant AI became part of how the whole team works — shared language, shared tools, fewer bottlenecks between disciplines.</p>
+      </div>
+      <div class="ph" style="flex:1; height:clamp(240px,26vw,340px);">Trainings &amp; playbooks</div>
+    </div>
+
+    <div class="feat reveal" style="display:flex; gap:clamp(24px,4vw,56px); align-items:center;">
+      <div style="flex:1;">
+        <div style="color:#2B7BF6; font-weight:800; font-size:15px; margin-bottom:10px;">Move 03</div>
+        <h3 style="margin:0 0 12px; font-weight:800; font-size:clamp(22px,2.4vw,32px);">A review skill that guards quality</h3>
+        <p style="margin:0; color:#3A3E44; font-size:16px; line-height:1.65;">A dedicated review skill checks work against general UX principles and, above all, the Snelstart design system — so faster output never means lower quality.</p>
+      </div>
+      <div class="ph" style="flex:1; height:clamp(240px,26vw,340px);">UX review skill</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:#0B0B0C; color:#fff;">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="color:#fff; margin-bottom:14px;"><span class="dot" style="color:#4E92F8;">✦</span> THE JOURNEY</div>
+    <h2 class="reveal" style="margin:0 0 clamp(48px,7vw,80px); color:#fff; font-weight:800; font-size:clamp(28px,4vw,52px); line-height:1.06; max-width:760px;">From curiosity to capability.</h2>
+
+    <div style="display:flex; flex-direction:column; gap:clamp(28px,4vw,44px);">
+      <div class="tl-row reveal" style="display:flex; gap:clamp(20px,3vw,44px); align-items:flex-start;">
+        <div style="flex:0 0 170px; color:#4E92F8; font-weight:800; font-size:clamp(20px,2vw,26px);">01 · Assess</div>
+        <div style="flex:1; color:rgba(255,255,255,0.78); font-size:16px; line-height:1.6; border-top:1px solid rgba(255,255,255,0.16); padding-top:14px;">Understood how the team already worked, where AI could genuinely help, and what would get in the way of adoption.</div>
+      </div>
+      <div class="tl-row reveal" style="display:flex; gap:clamp(20px,3vw,44px); align-items:flex-start;">
+        <div style="flex:0 0 170px; color:#4E92F8; font-weight:800; font-size:clamp(20px,2vw,26px);">02 · Strategise</div>
+        <div style="flex:1; color:rgba(255,255,255,0.78); font-size:16px; line-height:1.6; border-top:1px solid rgba(255,255,255,0.16); padding-top:14px;">Wrote the UX × AI strategy — principles, use cases and a view on keeping the experience consistent across ventures.</div>
+      </div>
+      <div class="tl-row reveal" style="display:flex; gap:clamp(20px,3vw,44px); align-items:flex-start;">
+        <div style="flex:0 0 170px; color:#4E92F8; font-weight:800; font-size:clamp(20px,2vw,26px);">03 · Enable</div>
+        <div style="flex:1; color:rgba(255,255,255,0.78); font-size:16px; line-height:1.6; border-top:1px solid rgba(255,255,255,0.16); padding-top:14px;">Introduced Claude, built Snelstart-specific skills, and ran hands-on trainings for designers and product owners.</div>
+      </div>
+      <div class="tl-row reveal" style="display:flex; gap:clamp(20px,3vw,44px); align-items:flex-start;">
+        <div style="flex:0 0 170px; color:#4E92F8; font-weight:800; font-size:clamp(20px,2vw,26px);">04 · Scale</div>
+        <div style="flex:1; color:rgba(255,255,255,0.78); font-size:16px; line-height:1.6; border-top:1px solid rgba(255,255,255,0.16); padding-top:14px;">Grew the skills library, refined the playbooks, and kept pushing the consistency vision as new ventures come online.</div>
+      </div>
+    </div>
+    <div class="reveal" style="margin-top:clamp(44px,6vw,64px);"><a href="Snelstart-Relations.html" class="cta on-dark"><span>Next case — Relations, reimagined</span><span class="ar">→</span></a></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="reveal" style="background:linear-gradient(135deg,#EAF1FF,#DCE9FF); border-radius:24px; padding:clamp(30px,4.5vw,64px);">
+      <div class="eyebrow" style="margin-bottom:16px;"><span class="dot">✦</span> WHERE IT GOES NEXT</div>
+      <h2 style="margin:0 0 18px; font-weight:800; font-size:clamp(26px,3.4vw,46px); line-height:1.08; max-width:18ch;">Enabling the ventures — without more designers.</h2>
+      <p style="margin:0; color:#3A3E44; font-size:clamp(16px,1.4vw,19px); line-height:1.65; max-width:840px;">Snelstart's ventures often have no designers of their own, and their teams aren't steeped in the Snelstart design system or tone of voice — they're busy building their own products. The same processes and skills let us enable those ventures too: bringing quality and consistency to more products with the same number of UXers.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:#F5F8FF;">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">✦</span> THE IMPACT</div>
+    <h2 class="reveal" style="margin:0 0 clamp(34px,4vw,50px); font-weight:800; font-size:clamp(28px,4vw,52px); line-height:1.06; max-width:760px;">A team that designs with AI, on purpose.</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:clamp(16px,2.5vw,26px); margin-bottom:clamp(30px,4vw,44px);">
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 16px 44px rgba(20,40,80,0.07);"><div class="live" style="font-size:15px;"><span class="live-dot"></span> Ongoing</div><div style="font-weight:800; font-size:18px; margin-top:12px;">Embedded, not experimental</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">AI is now part of how the design org actually works, day to day.</div></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 16px 44px rgba(20,40,80,0.07);"><div style="font-weight:800; font-size:18px;">A reusable skills library</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">Snelstart-specific Claude skills anyone on the team can pick up and run.</div></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 16px 44px rgba(20,40,80,0.07);"><div style="font-weight:800; font-size:18px;">Designers freed up</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">Less time on repetitive fixes means designers are available across more projects at once.</div></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 16px 44px rgba(20,40,80,0.07);"><div style="font-weight:800; font-size:18px; color:#9AA3A3;">[ Add a result ]</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">A real number or quote makes it land — e.g. people trained, hours saved, or feedback from a PO.</div></div>
+    </div>
+  </div>
+</section>
+
+<footer style="position:relative; background:#2B7BF6; padding:clamp(70px,10vw,120px) 0 0; overflow:hidden;">
+  <div class="wrap" style="position:relative; z-index:2;">
+    <div class="reveal" style="display:flex; justify-content:space-between; align-items:center; gap:40px; flex-wrap:wrap;">
+      <h2 style="margin:0; color:#fff; font-weight:800; font-size:clamp(34px,5.4vw,80px); line-height:0.98;">lets <span class="rotword" style="font-family:'Kaushan Script',cursive; font-weight:400; display:inline-block; transition:opacity .3s ease;">build</span><br>something great together.</h2>
+    </div>
+    <div class="reveal" style="display:flex; gap:60px; flex-wrap:wrap; margin-top:clamp(40px,6vw,70px);">
+      <div><div style="color:rgba(255,255,255,0.7); font-size:14px; font-weight:700;">Email</div><a href="mailto:nadja.gurk@icloud.com" style="color:#fff; font-weight:700; font-size:clamp(18px,1.8vw,22px); text-decoration:none;">nadja.gurk@icloud.com</a></div>
+      <div><div style="color:rgba(255,255,255,0.7); font-size:14px; font-weight:700;">LinkedIn</div><a href="https://www.linkedin.com/in/nadja-gurk-197051198/" target="_blank" rel="noopener" style="color:#fff; font-weight:700; font-size:clamp(18px,1.8vw,22px); text-decoration:none;">Nadja Gurk</a></div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.25); margin-top:clamp(40px,6vw,70px); padding:24px 0; color:rgba(255,255,255,0.8); font-size:14px; font-weight:600;">© 2026 Nadja Gurk</div>
+  </div>
+  <div aria-hidden="true" style="position:absolute; left:50%; bottom:-3.5vw; transform:translateX(-50%); font-weight:900; font-size:42vw; line-height:0.72; letter-spacing:-0.05em; color:rgba(255,255,255,0.13); white-space:nowrap; pointer-events:none; user-select:none;">NADJA</div>
+</footer>
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){if(getComputedStyle(el).opacity==='0')el.classList.add('in');});},2600);
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var el=document.querySelector(a.getAttribute('href'));if(el){e.preventDefault();window.scrollTo({top:el.getBoundingClientRect().top+scrollY-80,behavior:'smooth'});}});});
+  var words=['build','design','create','ship'],ri=0;
+  setInterval(function(){var el=document.querySelector('.rotword');if(!el)return;ri=(ri+1)%words.length;el.style.opacity='0';setTimeout(function(){el.textContent=words[ri];el.style.opacity='1';},300);},2400);
+})();
+</script>
+</body>
+</html>

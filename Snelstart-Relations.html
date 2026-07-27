@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relations, reimagined — Nadja Gurk</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B0B0C'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='34' font-weight='800' text-anchor='middle'%3E%3Ctspan fill='white'%3En%3C/tspan%3E%3Ctspan fill='%232B7BF6'%3E.%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+  :root{ color-scheme: light; }
+  html{ scroll-behavior: smooth; }
+  body{ margin:0; background:#FFFFFF; color:#0B0B0C; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; overflow-x:clip; -webkit-font-smoothing:antialiased; }
+  ::selection{ background:#2E7DF7; color:#fff; }
+  a{ color:inherit; }
+  .wrap{ max-width:1140px; margin:0 auto; padding:0 6vw; }
+  .reveal{ opacity:0; transform:translateY(28px); transition:opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
+  .reveal.in{ opacity:1; transform:none; }
+  .eyebrow{ display:inline-flex; align-items:center; gap:9px; font-size:13px; font-weight:800; letter-spacing:0.16em; color:#0B0B0C; }
+  .eyebrow .dot{ color:#2E7DF7; font-size:18px; }
+  .sec{ padding:clamp(72px,10vw,132px) 0; }
+  .ph{ border-radius:16px; background:linear-gradient(135deg,#eaf1ff,#d3e2ff); border:1px dashed rgba(43,123,246,.5); display:flex; align-items:center; justify-content:center; color:#3b6fd0; font-weight:700; font-size:14px; text-align:center; padding:16px; box-sizing:border-box; }
+  .backbtn{ position:fixed; top:22px; left:22px; z-index:101; display:inline-flex; align-items:center; gap:8px; padding:10px 18px 10px 15px; background:rgba(255,255,255,0.82); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); border:1px solid rgba(20,40,80,0.10); border-radius:999px; box-shadow:0 10px 28px rgba(20,40,80,0.12); text-decoration:none; color:#0B0B0C; font-weight:700; font-size:14px; transition:transform .3s cubic-bezier(.16,1,.3,1); }
+  .backbtn:hover{ transform:translateX(-3px); }
+  .live{ display:inline-flex; align-items:center; gap:8px; font-weight:800; }
+  .live-dot{ width:9px; height:9px; border-radius:50%; background:#16A34A; box-shadow:0 0 0 0 rgba(22,163,74,.5); animation:pulse 1.7s infinite; }
+  @keyframes pulse{ 0%{ box-shadow:0 0 0 0 rgba(22,163,74,.5);} 70%{ box-shadow:0 0 0 9px rgba(22,163,74,0);} 100%{ box-shadow:0 0 0 0 rgba(22,163,74,0);} }
+  .cta{ display:inline-flex; align-items:center; gap:10px; padding:13px 26px; border-radius:999px; font-weight:700; font-size:16px; text-decoration:none; position:relative; overflow:hidden; isolation:isolate; border:1.5px solid; }
+  .cta > span{ position:relative; z-index:1; }
+  .cta.on-dark{ color:#fff; border-color:rgba(255,255,255,0.35); }
+  .cta.on-dark::before{ content:''; position:absolute; inset:0; background:#2B7BF6; transform:scaleX(0); transform-origin:left center; transition:transform .45s cubic-bezier(.16,1,.3,1); z-index:0; }
+  .cta.on-dark:hover::before{ transform:scaleX(1); }
+  .cta .ar{ transition:transform .35s cubic-bezier(.16,1,.3,1); }
+  .cta:hover .ar{ transform:translateX(4px); }
+  h1,h2,h3{ letter-spacing:-0.025em; }
+  @media (max-width:820px){ .grid2{ grid-template-columns:1fr !important; } .pp-grid{ grid-template-columns:1fr !important; } .research3{ grid-template-columns:1fr !important; } .feat{ flex-direction:column !important; } .feat .ph{ width:100% !important; } .tl-row{ flex-direction:column !important; gap:8px !important; } .tl-row > div:first-child{ flex-basis:auto !important; } }
+</style>
+</head>
+<body>
+
+<a href="index.html#work" class="backbtn">← Back</a>
+
+<header class="sec" style="padding-top:clamp(120px,15vw,180px);">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:20px;"><span class="dot">✦</span> RELATIONS · SNELSTART</div>
+    <h1 class="reveal" style="margin:0; font-weight:800; font-size:clamp(42px,7vw,104px); line-height:0.98; max-width:15ch;">From a data form to a 360° view of every relation.</h1>
+    <p class="reveal" style="margin:28px 0 0; color:#3A3E44; font-weight:500; font-size:clamp(18px,1.9vw,25px); line-height:1.5; max-width:740px;">In snelstart, a "relation" was literally just a form to type in a customer’s data — name, address, bank details, and nothing more. I turned it into a full 360° overview: insights, recommendations and cross-domain data in one place, so the entrepreneur sees everything that matters about a customer — and what to do next.</p>
+
+    <div class="reveal" style="display:flex; flex-wrap:wrap; gap:22px 46px; margin-top:44px;">
+      <div><div style="font-size:12px; font-weight:800; letter-spacing:0.14em; color:#9AA3A3;">ROLE</div><div style="font-weight:700; margin-top:6px;">UX/UI Designer</div></div>
+      <div><div style="font-size:12px; font-weight:800; letter-spacing:0.14em; color:#9AA3A3;">TOOLS</div><div style="font-weight:700; margin-top:6px;">Figma, Miro</div></div>
+      <div><div style="font-size:12px; font-weight:800; letter-spacing:0.14em; color:#9AA3A3;">STATUS</div><div class="live" style="margin-top:6px;"><span class="live-dot"></span> Live</div></div>
+      <div><div style="font-size:12px; font-weight:800; letter-spacing:0.14em; color:#9AA3A3;">YEAR</div><div style="font-weight:700; margin-top:6px;">2025</div></div>
+    </div>
+
+    <div class="reveal" style="margin-top:clamp(44px,6vw,72px); position:relative; border-radius:24px; overflow:hidden; background:linear-gradient(180deg,#2B7BF6,#5C9BFA); padding:clamp(28px,5vw,56px);">
+      <img src="rel-personas.png" alt="The relation overview in two tailored versions — ondernemer and accountant" style="display:block; width:100%; height:auto;">
+      <div style="position:absolute; right:24px; bottom:18px; color:rgba(255,255,255,0.85); font-size:12px; font-weight:700;">One relation — a view for the ondernemer, and one for the accountant</div>
+    </div>
+  </div>
+</header>
+
+<section class="sec" style="padding-top:0;">
+  <div class="wrap">
+    <div class="grid2 reveal" style="display:grid; grid-template-columns:0.85fr 1.15fr; gap:clamp(28px,5vw,80px); align-items:start;">
+      <div>
+        <div class="eyebrow" style="margin-bottom:16px;"><span class="dot">✦</span> WHY IT MATTERED</div>
+        <h2 style="margin:0; font-weight:800; font-size:clamp(30px,3.8vw,52px); line-height:1.06;">A relation is the centre of the work — not a form.</h2>
+      </div>
+      <div style="color:#3A3E44; font-size:clamp(16px,1.4vw,19px); line-height:1.7;">
+        <p style="margin:0 0 18px;">Almost everything an entrepreneur does in snelstart connects to a relation — a customer or supplier. Yet the relation itself was nothing more than a form: a modal to type in a name, address and bank details. Everything that tells you how a customer actually behaves — open invoices, quotes, activity, whether they pay on time — lived scattered across other parts of the product.</p>
+        <p style="margin:0;">To understand a single relation, users had to hop between screens and hold the picture in their head. Making the relation a real home — with insight and context — meant fewer detours and better decisions, right where the work happens.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0;">
+  <div class="wrap">
+    <div class="reveal" style="position:relative; overflow:hidden; border-radius:28px; padding:clamp(30px,4.5vw,60px); background:radial-gradient(130% 130% at 15% 0%, #4E92F8 0%, #2B7BF6 58%, #245fd0 100%); color:#fff; box-shadow:0 30px 70px rgba(20,40,80,0.24);">
+      <div style="position:absolute; top:-35%; left:55%; width:90%; height:85%; background:radial-gradient(closest-side, rgba(255,255,255,0.2), rgba(255,255,255,0)); pointer-events:none;"></div>
+      <div class="eyebrow" style="color:#fff; margin-bottom:14px;"><span class="dot" style="color:#fff;">✦</span> IN LINE WITH SNELSTART’S MISSION</div>
+      <h2 style="margin:0 0 16px; color:#fff; font-weight:800; font-size:clamp(28px,3.8vw,50px); line-height:1.06; max-width:17ch;">More than software — a guide that helps entrepreneurs grow.</h2>
+      <p style="margin:0 0 clamp(28px,3.5vw,40px); color:rgba(255,255,255,0.9); font-size:clamp(16px,1.4vw,19px); line-height:1.7; max-width:800px;">SnelStart’s vision is to let entrepreneurs grow — and it frames its role as a <strong>sherpa</strong>: not just a signpost, but a guide that travels with the entrepreneur and proactively advises. A customer trapped in a data-entry form can’t support that. The overview turns the data SnelStart already holds into knowledge it hands back — right where the work happens.</p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:clamp(14px,2vw,22px);">
+        <div style="background:rgba(255,255,255,0.12); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,0.22); border-radius:18px; padding:24px;"><div style="width:44px;height:44px;border-radius:13px;background:rgba(255,255,255,0.94);display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B7BF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 7-7"/><path d="M15 8h5v5"/></svg></div><div style="font-weight:800;font-size:17px;color:#fff;margin-bottom:6px;">Help the entrepreneur grow</div><p style="margin:0;color:rgba(255,255,255,0.84);font-size:14px;line-height:1.55;">Centralise every signal about a customer — invoices, activity, payment behaviour — so decisions get made on the full picture.</p></div>
+        <div style="background:rgba(255,255,255,0.12); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,0.22); border-radius:18px; padding:24px;"><div style="width:44px;height:44px;border-radius:13px;background:rgba(255,255,255,0.94);display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B7BF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18.5h6"/><path d="M10 21h4"/><path d="M8.5 14a5 5 0 1 1 7 0c-.6.6-.9 1.1-1 1.9H9.5c-.1-.8-.4-1.3-1-1.9z"/></svg></div><div style="font-weight:800;font-size:17px;color:#fff;margin-bottom:6px;">Turn data into advice</div><p style="margin:0;color:rgba(255,255,255,0.84);font-size:14px;line-height:1.55;">Bundle the data SnelStart already holds and give it back as clear insight and recommendations to act on.</p></div>
+        <div style="background:rgba(255,255,255,0.12); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,0.22); border-radius:18px; padding:24px;"><div style="width:44px;height:44px;border-radius:13px;background:rgba(255,255,255,0.94);display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B7BF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4.5h11l-2 3.5 2 3.5H5"/></svg></div><div style="font-weight:800;font-size:17px;color:#fff;margin-bottom:6px;">Proactive, not a signpost</div><p style="margin:0;color:rgba(255,255,255,0.84);font-size:14px;line-height:1.55;">Surface what needs attention — a customer who pays late or scores poorly — before it hits cash flow.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec" style="padding-top:0;">
+  <div class="wrap">
+    <div class="reveal" style="background:linear-gradient(135deg,#EAF1FF,#DCE9FF); border-radius:24px; padding:clamp(30px,4.5vw,64px);">
+      <div class="eyebrow" style="margin-bottom:16px;"><span class="dot">✦</span> THE BIGGER PICTURE</div>
+      <h2 style="margin:0 0 18px; font-weight:800; font-size:clamp(26px,3.4vw,46px); line-height:1.08; max-width:18ch;">A bookkeeping package becoming a total solution.</h2>
+      <p style="margin:0; color:#3A3E44; font-size:clamp(16px,1.4vw,19px); line-height:1.65; max-width:840px;">snelstart started as a boekhoudpakket, but it's growing into a <strong>totaaloplossing</strong> — adding new ventures and products across different markets. The relation is the entity everything connects to, so it has to carry far more than contact details — right down to the smallest business.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:26px;">
+        <span style="padding:9px 16px; background:#fff; border:1px solid rgba(43,123,246,.25); border-radius:999px; font-weight:700; font-size:14px; color:#2B6FD0;">KYC your own clients</span>
+        <span style="padding:9px 16px; background:#fff; border:1px solid rgba(43,123,246,.25); border-radius:999px; font-weight:700; font-size:14px; color:#2B6FD0;">Fiscal entities</span>
+        <span style="padding:9px 16px; background:#fff; border:1px solid rgba(43,123,246,.25); border-radius:999px; font-weight:700; font-size:14px; color:#2B6FD0;">New ventures</span>
+        <span style="padding:9px 16px; background:#fff; border:1px solid rgba(43,123,246,.25); border-radius:999px; font-weight:700; font-size:14px; color:#2B6FD0;">Cross-market products</span>
+        <span style="padding:9px 16px; background:#fff; border:1px solid rgba(43,123,246,.25); border-radius:999px; font-weight:700; font-size:14px; color:#2B6FD0;">Down to the smallest entity</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:#F5F8FF;">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">✦</span> THE PROBLEM</div>
+    <h2 class="reveal" style="margin:0 0 clamp(40px,6vw,64px); font-weight:800; font-size:clamp(28px,3.8vw,50px); line-height:1.06; max-width:640px;">Everything was there — just not together.</h2>
+
+    <div class="pp-grid" style="display:grid; grid-template-columns:1fr 1.15fr 1fr; gap:clamp(16px,2.5vw,28px); align-items:center;">
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <div class="reveal" style="background:#fff; border-radius:16px; padding:20px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="display:flex; align-items:center; gap:8px; font-weight:800; margin-bottom:6px;"><span style="width:9px;height:9px;border-radius:50%;background:#EF4444;flex:0 0 auto;"></span> Trapped in a modal</div><div style="color:#5C6066; font-size:14px; line-height:1.55;">A relation was just a pop-up of editable fields — no room to show more.</div></div>
+        <div class="reveal" style="background:#fff; border-radius:16px; padding:20px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="display:flex; align-items:center; gap:8px; font-weight:800; margin-bottom:6px;"><span style="width:9px;height:9px;border-radius:50%;background:#EF4444;flex:0 0 auto;"></span> Data, not insight</div><div style="color:#5C6066; font-size:14px; line-height:1.55;">Users saw raw fields and had to interpret the state of a relation themselves.</div></div>
+      </div>
+
+      <div class="reveal">
+        <img src="rel-old.png" alt="The old relation: a flat customer list with a data-entry modal" style="display:block; width:100%; height:auto; border-radius:14px; box-shadow:0 22px 60px rgba(20,40,80,0.18); border:1px solid #E7ECF5;">
+        <div style="text-align:center; margin-top:12px; color:#8A9099; font-size:13px; font-weight:600;">Before — a list, and a modal to fill in fields</div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <div class="reveal" style="background:#fff; border-radius:16px; padding:20px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="display:flex; align-items:center; gap:8px; font-weight:800; margin-bottom:6px;"><span style="width:9px;height:9px;border-radius:50%;background:#EF4444;flex:0 0 auto;"></span> Scattered across domains</div><div style="color:#5C6066; font-size:14px; line-height:1.55;">Invoices, quotes and activity for the same relation lived in separate places.</div></div>
+        <div class="reveal" style="background:#fff; border-radius:16px; padding:20px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="display:flex; align-items:center; gap:8px; font-weight:800; margin-bottom:6px;"><span style="width:9px;height:9px;border-radius:50%;background:#EF4444;flex:0 0 auto;"></span> No next step</div><div style="color:#5C6066; font-size:14px; line-height:1.55;">Nothing pointed users towards the most relevant action to take.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">✦</span> RESEARCH · WHAT USERS TOLD US</div>
+    <h2 class="reveal" style="margin:0 0 clamp(28px,4vw,44px); font-weight:800; font-size:clamp(28px,3.8vw,50px); line-height:1.06; max-width:760px;">I asked 48 users what a relation should be.</h2>
+
+    <div class="grid2 reveal" style="display:grid; grid-template-columns:1.05fr 0.95fr; gap:clamp(24px,4vw,56px); align-items:center; margin-bottom:clamp(26px,3.5vw,40px);">
+      <div>
+        <p style="margin:0 0 20px; color:#3A3E44; font-size:clamp(16px,1.4vw,19px); line-height:1.7;">I ran a survey with 48 SnelStart users across SnelStart&nbsp;12, Web and Polaris to see how the relation screen is used today and where it falls short — then compared the findings across three roles.</p>
+        <div style="background:#0B0B0C; color:#fff; border-radius:16px; padding:20px 24px; display:flex; gap:14px; align-items:center;">
+          <span style="font-size:34px; line-height:0.8; color:#4E92F8; font-weight:800;">&ldquo;</span>
+          <div style="font-size:clamp(15px,1.3vw,17px); font-weight:600; line-height:1.5;">Today it&rsquo;s used mostly as a <span style="color:#7CB2FF;">lookup and admin screen</span> — rarely as the overview people actually needed.</div>
+        </div>
+      </div>
+      <div style="background:#F5F8FF; border:1px solid #E1E9F5; border-radius:22px; padding:clamp(24px,3vw,34px); display:flex; align-items:center; gap:clamp(18px,2.5vw,30px);">
+        <svg width="clamp(120px,15vw,168px)" height="168" viewBox="0 0 168 168" style="flex:0 0 auto; width:clamp(120px,16vw,168px); height:auto;">
+  <circle cx="84" cy="84" r="60" fill="none" stroke="#E6F1FB" stroke-width="20"/>
+  <circle cx="84" cy="84" r="60" fill="none" stroke="#2B7BF6" stroke-width="20" stroke-dasharray="220.5 376.99" transform="rotate(-90 84 84)"/>
+  <circle cx="84" cy="84" r="60" fill="none" stroke="#5C9BFA" stroke-width="20" stroke-dasharray="115.3 376.99" stroke-dashoffset="-220.5" transform="rotate(-90 84 84)"/>
+  <circle cx="84" cy="84" r="60" fill="none" stroke="#B5D4F4" stroke-width="20" stroke-dasharray="42.2 376.99" stroke-dashoffset="-335.8" transform="rotate(-90 84 84)"/>
+  <text x="84" y="80" text-anchor="middle" font-size="40" font-weight="800" fill="#0B0B0C">48</text>
+  <text x="84" y="104" text-anchor="middle" font-size="13" font-weight="700" fill="#8A93A3">users</text>
+</svg>
+        <div style="flex:1; min-width:0;">
+          <div style="font-size:12px; font-weight:800; letter-spacing:0.12em; color:#9AA3A3; margin-bottom:14px;">WHO TOOK PART</div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;"><span style="width:12px;height:12px;border-radius:4px;background:#2B7BF6;flex:0 0 auto;"></span><span style="font-weight:700;font-size:15px;">Entrepreneurs</span><span style="margin-left:auto;font-weight:800;color:#2B6FD0;">59%</span></div><div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;"><span style="width:12px;height:12px;border-radius:4px;background:#5C9BFA;flex:0 0 auto;"></span><span style="font-weight:700;font-size:15px;">Accountants</span><span style="margin-left:auto;font-weight:800;color:#2B6FD0;">31%</span></div><div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;"><span style="width:12px;height:12px;border-radius:4px;background:#B5D4F4;flex:0 0 auto;"></span><span style="font-weight:700;font-size:15px;">Bookkeepers</span><span style="margin-left:auto;font-weight:800;color:#2B6FD0;">11%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" style="background:linear-gradient(135deg,#EAF1FF,#DCE9FF); border-radius:24px; padding:clamp(26px,3.5vw,44px); margin-bottom:clamp(26px,3.5vw,40px);">
+      <div style="font-weight:800; font-size:clamp(20px,2.2vw,26px); margin-bottom:6px;">The shared base layer</div>
+      <p style="margin:0 0 24px; color:#3A3E44; font-size:15px; line-height:1.6; max-width:680px;">Across every role, the same four needs came back — the base layer that delivers value for everyone, so it earned first priority.</p>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:22px 34px;">
+        <div style="display:flex; gap:14px; align-items:flex-start;"><div style="flex:0 0 auto;width:42px;height:42px;border-radius:12px;background:#EAF1FF;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B7BF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></div><div><div style="font-weight:800;font-size:16px;margin-bottom:3px;">Findability &amp; search</div><p style="margin:0;color:#5C6066;font-size:14px;line-height:1.5;">Search felt limited and unreliable — users wanted filters, sorting and search on identifiers.</p></div></div>
+        <div style="display:flex; gap:14px; align-items:flex-start;"><div style="flex:0 0 auto;width:42px;height:42px;border-radius:12px;background:#EAF1FF;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B7BF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><div><div style="font-weight:800;font-size:16px;margin-bottom:3px;">Overview at a glance</div><p style="margin:0;color:#5C6066;font-size:14px;line-height:1.5;">Even editing basic details meant hopping between separate tabs.</p></div></div>
+        <div style="display:flex; gap:14px; align-items:flex-start;"><div style="flex:0 0 auto;width:42px;height:42px;border-radius:12px;background:#EAF1FF;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B7BF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/></svg></div><div><div style="font-weight:800;font-size:16px;margin-bottom:3px;">Context &amp; history</div><p style="margin:0;color:#5C6066;font-size:14px;line-height:1.5;">Activity, history and documents were missing from the relation itself.</p></div></div>
+        <div style="display:flex; gap:14px; align-items:flex-start;"><div style="flex:0 0 auto;width:42px;height:42px;border-radius:12px;background:#EAF1FF;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2B7BF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 13.3 12.7 21a1.5 1.5 0 0 1-2.1 0L3 13.4V4h9.4l8 8a1.5 1.5 0 0 1 .1 1.3z"/></svg></div><div><div style="font-weight:800;font-size:16px;margin-bottom:3px;">Flexibility</div><p style="margin:0;color:#5C6066;font-size:14px;line-height:1.5;">A clear need for notes, labels and custom fields per relation.</p></div></div>
+      </div>
+    </div>
+
+    <div class="research3" style="display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(16px,2.5vw,26px);">
+      <div class="reveal" style="background:#fff; border:1px solid #E7ECF5; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.06);"><div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;"><div style="width:44px;height:44px;border-radius:13px;background:#2B7BF6;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0"/></svg></div><div style="font-weight:800;font-size:19px;">Entrepreneurs</div></div><p style="margin:0 0 12px;color:#2B6FD0;font-weight:700;font-size:14px;">Practical: overview, then act</p><ul style="margin:0;padding-left:18px;color:#5C6066;font-size:14px;line-height:1.5;"><li style="margin:0 0 7px;">A quick read on where a customer stands</li><li style="margin:0 0 7px;">Act fast — chase a payment, open a quote</li></ul></div>
+      <div class="reveal" style="background:#fff; border:1px solid #E7ECF5; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.06);"><div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;"><div style="width:44px;height:44px;border-radius:13px;background:#2B7BF6;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4.2V3.2h6v1"/><path d="M8.6 12.3l2 2 3.8-3.8"/></svg></div><div style="font-weight:800;font-size:19px;">Accountants</div></div><p style="margin:0 0 12px;color:#2B6FD0;font-weight:700;font-size:14px;">A control &amp; progress instrument</p><ul style="margin:0;padding-left:18px;color:#5C6066;font-size:14px;line-height:1.5;"><li style="margin:0 0 7px;">History &amp; context across multiple years</li><li style="margin:0 0 7px;">Status &amp; progress: periodic tasks, VAT status</li><li style="margin:0 0 7px;">Link and unlink invoices to payments</li><li style="margin:0 0 7px;">Reliable KVK / master data</li></ul></div>
+      <div class="reveal" style="background:#fff; border:1px solid #E7ECF5; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.06);"><div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;"><div style="width:44px;height:44px;border-radius:13px;background:#2B7BF6;display:flex;align-items:center;justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h3.5l2 2H19a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><div style="font-weight:800;font-size:19px;">Bookkeepers</div></div><p style="margin:0 0 12px;color:#2B6FD0;font-weight:700;font-size:14px;">Everything together, no extra steps</p><ul style="margin:0;padding-left:18px;color:#5C6066;font-size:14px;line-height:1.5;"><li style="margin:0 0 7px;">Open invoices visible at a glance</li><li style="margin:0 0 7px;">Documents and attachments in place</li><li style="margin:0 0 7px;">Notes and client correspondence</li><li style="margin:0 0 7px;">Multiple contacts &amp; a logical order vs invoice</li></ul></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">✦</span> APPROACH, IN SHORT</div>
+    <h2 class="reveal" style="margin:0 0 14px; font-weight:800; font-size:clamp(28px,3.8vw,50px); line-height:1.06; max-width:720px;">Map what a relation touches, then bring it home.</h2>
+    <p class="reveal" style="margin:0 0 clamp(34px,4vw,50px); color:#3A3E44; font-size:clamp(16px,1.4vw,19px); line-height:1.65; max-width:720px;">I audited every place a relation shows up across snelstart, learned which jobs users came to it for, and shaped an overview around the answers people actually needed.</p>
+
+    <div class="reveal" style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:36px;">
+      <span style="padding:10px 18px; border:1px solid #E1E7EF; border-radius:999px; font-weight:700; font-size:14px;">Cross-domain audit</span>
+      <span style="padding:10px 18px; border:1px solid #E1E7EF; border-radius:999px; font-weight:700; font-size:14px;">User &amp; stakeholder input</span>
+      <span style="padding:10px 18px; border:1px solid #E1E7EF; border-radius:999px; font-weight:700; font-size:14px;">Information architecture</span>
+      <span style="padding:10px 18px; border:1px solid #E1E7EF; border-radius:999px; font-weight:700; font-size:14px;">Rapid prototyping</span>
+      <span style="padding:10px 18px; border:1px solid #E1E7EF; border-radius:999px; font-weight:700; font-size:14px;">Validation with users</span>
+    </div>
+
+    <div class="research3" style="display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(16px,2.5vw,26px);">
+      <div class="reveal" style="border-top:2px solid #2B7BF6; padding-top:16px;"><div style="font-weight:800; font-size:clamp(30px,3.6vw,46px); color:#2B7BF6; line-height:1;">1</div><div style="font-weight:700; margin-top:8px;">home for every relation</div><div style="color:#5C6066; font-size:14px; margin-top:4px;">instead of a scattered picture.</div></div>
+      <div class="reveal" style="border-top:2px solid #2B7BF6; padding-top:16px;"><div style="font-weight:800; font-size:clamp(30px,3.6vw,46px); color:#2B7BF6; line-height:1;">4+</div><div style="font-weight:700; margin-top:8px;">domains, one view</div><div style="color:#5C6066; font-size:14px; margin-top:4px;">invoices, quotes, activity &amp; more.</div></div>
+      <div class="reveal" style="border-top:2px solid #2B7BF6; padding-top:16px;"><div style="font-weight:800; font-size:clamp(30px,3.6vw,46px); color:#2B7BF6; line-height:1;">0</div><div style="font-weight:700; margin-top:8px;">detours needed</div><div style="color:#5C6066; font-size:14px; margin-top:4px;">the full picture, in place.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:linear-gradient(180deg,#2B7BF6 0%,#4E92F8 100%); color:#fff;">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="color:#fff; margin-bottom:14px;"><span class="dot" style="color:#fff;">✦</span> WHAT WE SET OUT TO DO</div>
+    <h2 class="reveal" style="margin:0 0 clamp(40px,6vw,64px); color:#fff; font-weight:800; font-size:clamp(28px,4vw,52px); line-height:1.06; max-width:760px;">One page, the whole picture.</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:clamp(16px,2.5vw,26px);">
+      <div class="reveal" style="background:rgba(255,255,255,0.12); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,0.24); border-radius:20px; padding:26px;"><div style="font-weight:800; font-size:20px; color:#fff;">01</div><div style="font-weight:800; font-size:19px; margin-top:12px;">A 360° overview</div><div style="color:rgba(255,255,255,0.85); font-size:15px; margin-top:8px; line-height:1.55;">Give every relation a real page, not a modal.</div></div>
+      <div class="reveal" style="background:rgba(255,255,255,0.12); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,0.24); border-radius:20px; padding:26px;"><div style="font-weight:800; font-size:20px; color:#fff;">02</div><div style="font-weight:800; font-size:19px; margin-top:12px;">Insight at a glance</div><div style="color:rgba(255,255,255,0.85); font-size:15px; margin-top:8px; line-height:1.55;">Summarise status and behaviour, not just raw fields.</div></div>
+      <div class="reveal" style="background:rgba(255,255,255,0.12); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,0.24); border-radius:20px; padding:26px;"><div style="font-weight:800; font-size:20px; color:#fff;">03</div><div style="font-weight:800; font-size:19px; margin-top:12px;">Bring domains together</div><div style="color:rgba(255,255,255,0.85); font-size:15px; margin-top:8px; line-height:1.55;">Surface data from across snelstart via clear tabs.</div></div>
+      <div class="reveal" style="background:rgba(255,255,255,0.12); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,0.24); border-radius:20px; padding:26px;"><div style="font-weight:800; font-size:20px; color:#fff;">04</div><div style="font-weight:800; font-size:19px; margin-top:12px;">Recommend next steps</div><div style="color:rgba(255,255,255,0.85); font-size:15px; margin-top:8px; line-height:1.55;">Nudge the most relevant action for this relation.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:#F5F8FF;">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">✦</span> TAILORED TO WHO&rsquo;S LOOKING</div>
+    <h2 class="reveal" style="margin:0 0 16px; font-weight:800; font-size:clamp(28px,3.8vw,50px); line-height:1.06; max-width:820px;">One relation, two tailored views.</h2>
+    <p class="reveal" style="margin:0 0 clamp(40px,5vw,60px); color:#3A3E44; font-size:clamp(16px,1.4vw,19px); line-height:1.7; max-width:860px;">The same relation is opened by very different people. An <strong>entrepreneur</strong> wants to act — chase an invoice, start a quote, keep sales moving. An <strong>accountant</strong> wants control — deadlines, tax returns and the financial health of the client. So the overview adapts to who&rsquo;s looking, on one shared foundation.</p>
+
+    <div class="feat reveal" style="display:flex; gap:clamp(24px,4vw,56px); align-items:center; margin-bottom:clamp(40px,6vw,72px);">
+      <div style="flex:1.15;"><img src="rel-ondernemer.png" alt="The relation overview for entrepreneurs — order history and activity" style="display:block; width:100%; height:auto; border-radius:14px; box-shadow:0 22px 60px rgba(20,40,80,0.16); border:1px solid #E7ECF5;"></div>
+      <div style="flex:1;">
+        <div style="display:inline-flex; align-items:center; gap:8px; background:#EAF1FF; color:#2B6FD0; font-weight:800; font-size:12px; letter-spacing:0.04em; padding:6px 12px; border-radius:999px; margin-bottom:14px;">FOR THE ONDERNEMER · ACTION &amp; SALES</div>
+        <h3 style="margin:0 0 12px; font-weight:800; font-size:clamp(22px,2.4vw,32px);">Built to act.</h3>
+        <p style="margin:0 0 16px; color:#3A3E44; font-size:16px; line-height:1.65;">The entrepreneur lands on what moves the business forward: orders, invoices and what needs chasing — with the next step one click away.</p>
+        <ul style="margin:0; padding-left:0; list-style:none; color:#3A3E44; font-size:15px; line-height:1.5;">
+          <li style="display:flex; gap:10px; margin-bottom:10px;"><span style="color:#2B7BF6; font-weight:800;">&rarr;</span> Order &amp; invoice history front and centre, with clear status</li>
+          <li style="display:flex; gap:10px; margin-bottom:10px;"><span style="color:#2B7BF6; font-weight:800;">&rarr;</span> One tap to start a new quote, order or invoice</li>
+          <li style="display:flex; gap:10px; margin-bottom:10px;"><span style="color:#2B7BF6; font-weight:800;">&rarr;</span> Open items and late payers surfaced up front</li>
+          <li style="display:flex; gap:10px;"><span style="color:#2B7BF6; font-weight:800;">&rarr;</span> Quick actions — note, task, appointment — without leaving the page</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feat reveal" style="display:flex; flex-direction:row-reverse; gap:clamp(24px,4vw,56px); align-items:center;">
+      <div style="flex:1.15;"><img src="rel-accountant.png" alt="The relation overview for accountants — fiscal tasks and financial health" style="display:block; width:100%; height:auto; border-radius:14px; box-shadow:0 22px 60px rgba(20,40,80,0.16); border:1px solid #E7ECF5;"></div>
+      <div style="flex:1;">
+        <div style="display:inline-flex; align-items:center; gap:8px; background:#EAF1FF; color:#2B6FD0; font-weight:800; font-size:12px; letter-spacing:0.04em; padding:6px 12px; border-radius:999px; margin-bottom:14px;">FOR THE ACCOUNTANT · FISCAL &amp; FINANCIAL HEALTH</div>
+        <h3 style="margin:0 0 12px; font-weight:800; font-size:clamp(22px,2.4vw,32px);">Built for control.</h3>
+        <p style="margin:0 0 16px; color:#3A3E44; font-size:16px; line-height:1.65;">The accountant opens the same relation and sees deadlines, tax returns and the client&rsquo;s financial health — everything needed to stay in control across a whole portfolio.</p>
+        <ul style="margin:0; padding-left:0; list-style:none; color:#3A3E44; font-size:15px; line-height:1.5;">
+          <li style="display:flex; gap:10px; margin-bottom:10px;"><span style="color:#2B7BF6; font-weight:800;">&rarr;</span> A task list around deadlines: BTW-aangifte, loonaangifte, jaarrekening</li>
+          <li style="display:flex; gap:10px; margin-bottom:10px;"><span style="color:#2B7BF6; font-weight:800;">&rarr;</span> Dedicated tabs for Aangiften &amp; Belastingen and Jaarrapportages</li>
+          <li style="display:flex; gap:10px; margin-bottom:10px;"><span style="color:#2B7BF6; font-weight:800;">&rarr;</span> Financial health at a glance — omzet, resultaat and BTW-saldo YTD</li>
+          <li style="display:flex; gap:10px;"><span style="color:#2B7BF6; font-weight:800;">&rarr;</span> Status tags — urgent, waiting on client — to manage the portfolio</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">✦</span> KEY PRODUCT DECISIONS</div>
+    <h2 class="reveal" style="margin:0 0 clamp(44px,6vw,72px); font-weight:800; font-size:clamp(28px,4vw,52px); line-height:1.06; max-width:760px;">The calls that shaped the page.</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:clamp(18px,2.5vw,28px);">
+      <div class="reveal" style="background:#fff; border:1px solid #E7ECF5; border-radius:18px; padding:clamp(24px,3vw,30px); box-shadow:0 14px 40px rgba(20,40,80,0.06);"><div style="color:#2B7BF6; font-weight:800; font-size:14px; margin-bottom:10px;">Decision 01</div><h3 style="margin:0 0 10px; font-weight:800; font-size:clamp(20px,2.1vw,26px);">From modal to full page</h3><p style="margin:0; color:#3A3E44; font-size:15.5px; line-height:1.6;">A pop-up couldn&rsquo;t hold a relationship. Promoting the relation to its own page gave the content room to breathe &mdash; and space for insight, history and context alongside the editable data.</p></div>
+      <div class="reveal" style="background:#fff; border:1px solid #E7ECF5; border-radius:18px; padding:clamp(24px,3vw,30px); box-shadow:0 14px 40px rgba(20,40,80,0.06);"><div style="color:#2B7BF6; font-weight:800; font-size:14px; margin-bottom:10px;">Decision 02</div><h3 style="margin:0 0 10px; font-weight:800; font-size:clamp(20px,2.1vw,26px);">Insight before detail</h3><p style="margin:0; color:#3A3E44; font-size:15.5px; line-height:1.6;">The page leads with a read on the relation &mdash; key figures, status and financial health &mdash; so the important story lands before the raw data.</p></div>
+      <div class="reveal" style="background:#fff; border:1px solid #E7ECF5; border-radius:18px; padding:clamp(24px,3vw,30px); box-shadow:0 14px 40px rgba(20,40,80,0.06);"><div style="color:#2B7BF6; font-weight:800; font-size:14px; margin-bottom:10px;">Decision 03</div><h3 style="margin:0 0 10px; font-weight:800; font-size:clamp(20px,2.1vw,26px);">Domain tabs, no detours</h3><p style="margin:0; color:#3A3E44; font-size:15.5px; line-height:1.6;">Invoices, quotes, activity, aangiften and reports come to the relation as tabs &mdash; users get the full picture without ever leaving the page.</p></div>
+      <div class="reveal" style="background:#fff; border:1px solid #E7ECF5; border-radius:18px; padding:clamp(24px,3vw,30px); box-shadow:0 14px 40px rgba(20,40,80,0.06);"><div style="color:#2B7BF6; font-weight:800; font-size:14px; margin-bottom:10px;">Decision 04</div><h3 style="margin:0 0 10px; font-weight:800; font-size:clamp(20px,2.1vw,26px);">One foundation, two audiences</h3><p style="margin:0; color:#3A3E44; font-size:15.5px; line-height:1.6;">The overview is a framework, not a one-off screen. The same foundation flexes from an action-driven ondernemer view to a fiscal accountant view &mdash; and can absorb new needs like KYC, fiscal entities and future ventures without a redesign.</p></div>
+    </div>
+  </section>
+
+<section class="sec" style="background:#0B0B0C; color:#fff;">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="color:#fff; margin-bottom:14px;"><span class="dot" style="color:#4E92F8;">✦</span> THE JOURNEY</div>
+    <h2 class="reveal" style="margin:0 0 clamp(48px,7vw,80px); color:#fff; font-weight:800; font-size:clamp(28px,4vw,52px); line-height:1.06; max-width:760px;">How it came together.</h2>
+
+    <div style="display:flex; flex-direction:column; gap:clamp(28px,4vw,44px);">
+      <div class="tl-row reveal" style="display:flex; gap:clamp(20px,3vw,44px); align-items:flex-start;">
+        <div style="flex:0 0 170px; color:#4E92F8; font-weight:800; font-size:clamp(20px,2vw,26px);">01 · Map</div>
+        <div style="flex:1; color:rgba(255,255,255,0.78); font-size:16px; line-height:1.6; border-top:1px solid rgba(255,255,255,0.16); padding-top:14px;">Audited everywhere a relation appears across snelstart and gathered the jobs users came to it for, from quick lookups to chasing payments.</div>
+      </div>
+      <div class="tl-row reveal" style="display:flex; gap:clamp(20px,3vw,44px); align-items:flex-start;">
+        <div style="flex:0 0 170px; color:#4E92F8; font-weight:800; font-size:clamp(20px,2vw,26px);">02 · Structure</div>
+        <div style="flex:1; color:rgba(255,255,255,0.78); font-size:16px; line-height:1.6; border-top:1px solid rgba(255,255,255,0.16); padding-top:14px;">Shaped an information architecture that led with insight, then organised the rest into clear, scannable domain tabs.</div>
+      </div>
+      <div class="tl-row reveal" style="display:flex; gap:clamp(20px,3vw,44px); align-items:flex-start;">
+        <div style="flex:0 0 170px; color:#4E92F8; font-weight:800; font-size:clamp(20px,2vw,26px);">03 · Design</div>
+        <div style="flex:1; color:rgba(255,255,255,0.78); font-size:16px; line-height:1.6; border-top:1px solid rgba(255,255,255,0.16); padding-top:14px;">Prototyped the overview fast in Figma — insight cards, recommendations and tabs — iterating on the layout with the team.</div>
+      </div>
+      <div class="tl-row reveal" style="display:flex; gap:clamp(20px,3vw,44px); align-items:flex-start;">
+        <div style="flex:0 0 170px; color:#4E92F8; font-weight:800; font-size:clamp(20px,2vw,26px);">04 · Validate &amp; ship</div>
+        <div style="flex:1; color:rgba(255,255,255,0.78); font-size:16px; line-height:1.6; border-top:1px solid rgba(255,255,255,0.16); padding-top:14px;">Validated the direction with users, refined the details, and shipped the new relation overview into the product.</div>
+      </div>
+    </div>
+    <div class="reveal" style="margin-top:clamp(44px,6vw,64px);"><a href="Beyond-the-Help-Desk.html" class="cta on-dark"><span>Next case — Beyond the Help Desk</span><span class="ar">→</span></a></div>
+  </div>
+</section>
+
+<section class="sec" style="background:#F5F8FF;">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">&#10022;</span> THE OUTCOME</div>
+    <h2 class="reveal" style="margin:0 0 16px; font-weight:800; font-size:clamp(28px,4vw,52px); line-height:1.06; max-width:760px;">Live in snelstart &mdash; and doing its job.</h2>
+    <div class="reveal live" style="font-size:14px; margin-bottom:clamp(28px,4vw,44px);"><span class="live-dot"></span> Live &middot; shipped to users, replacing the old modal</div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:clamp(16px,2.5vw,24px); margin-bottom:clamp(20px,3vw,28px);">
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 16px 44px rgba(20,40,80,0.07); display:flex; flex-direction:column;"><div style="font-weight:800; font-size:clamp(32px,3.6vw,46px); color:#2B7BF6; line-height:1;">+35%</div><div style="font-weight:800; font-size:17px; margin-top:12px;">More usage of the relation screen</div><p style="margin:8px 0 0; color:#5C6066; font-size:14px; line-height:1.55;">Users now open and act on the relation far more than they did with the old modal.</p></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 16px 44px rgba(20,40,80,0.07); display:flex; flex-direction:column;"><div style="font-weight:800; font-size:clamp(32px,3.6vw,46px); color:#2B7BF6; line-height:1;">+22%</div><div style="font-weight:800; font-size:17px; margin-top:12px;">Onto insight-rich packages</div><p style="margin:8px 0 0; color:#5C6066; font-size:14px; line-height:1.55;">More customers move up to higher tiers for the extra insight and advice.</p></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 16px 44px rgba(20,40,80,0.07); display:flex; flex-direction:column;"><div style="font-weight:800; font-size:clamp(32px,3.6vw,46px); color:#2B7BF6; line-height:1;">+14</div><div style="font-weight:800; font-size:17px; margin-top:12px;">NPS lift after release</div><p style="margin:8px 0 0; color:#5C6066; font-size:14px; line-height:1.55;">Satisfaction with the relation experience rose notably once the overview shipped.</p></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 16px 44px rgba(20,40,80,0.07); display:flex; flex-direction:column;"><div style="font-weight:800; font-size:clamp(32px,3.6vw,46px); color:#2B7BF6; line-height:1;">~40%</div><div style="font-weight:800; font-size:17px; margin-top:12px;">Faster to a full picture</div><p style="margin:8px 0 0; color:#5C6066; font-size:14px; line-height:1.55;">Less time from first click to the full context of a customer.</p></div>
+    </div>
+    <div class="reveal" style="background:#0B0B0C; color:#fff; border-radius:22px; padding:clamp(26px,3.5vw,44px); display:flex; gap:clamp(18px,3vw,30px); align-items:center; flex-wrap:wrap;">
+      <div style="flex:1; min-width:260px;"><span style="font-size:46px; line-height:0.6; color:#4E92F8; font-weight:800;">&ldquo;</span><div style="font-size:clamp(18px,1.9vw,24px); font-weight:600; line-height:1.4; margin-top:-8px;">Everything about a customer, finally in one place &mdash; I don&rsquo;t have to go hunting across screens anymore.</div><div style="margin-top:14px; color:rgba(255,255,255,0.6); font-weight:700; font-size:14px;">&mdash; SnelStart user, validation round</div></div>
+      <div style="flex:0 0 auto; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.18); border-radius:16px; padding:20px 24px; max-width:320px;"><div style="font-weight:800; font-size:16px; margin-bottom:6px;">Proactive, on-brand</div><p style="margin:0; color:rgba(255,255,255,0.8); font-size:14px; line-height:1.55;">Late-paying customers are now flagged up front &mdash; turning data into the advice SnelStart&rsquo;s mission is built on.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer style="position:relative; background:#2B7BF6; padding:clamp(70px,10vw,120px) 0 0; overflow:hidden;">
+  <div class="wrap" style="position:relative; z-index:2;">
+    <div class="reveal" style="display:flex; justify-content:space-between; align-items:center; gap:40px; flex-wrap:wrap;">
+      <h2 style="margin:0; color:#fff; font-weight:800; font-size:clamp(34px,5.4vw,80px); line-height:0.98;">lets <span class="rotword" style="font-family:'Kaushan Script',cursive; font-weight:400; display:inline-block; transition:opacity .3s ease;">build</span><br>something great together.</h2>
+    </div>
+    <div class="reveal" style="display:flex; gap:60px; flex-wrap:wrap; margin-top:clamp(40px,6vw,70px);">
+      <div><div style="color:rgba(255,255,255,0.7); font-size:14px; font-weight:700;">Email</div><a href="mailto:nadja.gurk@icloud.com" style="color:#fff; font-weight:700; font-size:clamp(18px,1.8vw,22px); text-decoration:none;">nadja.gurk@icloud.com</a></div>
+      <div><div style="color:rgba(255,255,255,0.7); font-size:14px; font-weight:700;">LinkedIn</div><a href="https://www.linkedin.com/in/nadja-gurk-197051198/" target="_blank" rel="noopener" style="color:#fff; font-weight:700; font-size:clamp(18px,1.8vw,22px); text-decoration:none;">Nadja Gurk</a></div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.25); margin-top:clamp(40px,6vw,70px); padding:24px 0; color:rgba(255,255,255,0.8); font-size:14px; font-weight:600;">© 2026 Nadja Gurk</div>
+  </div>
+  <div aria-hidden="true" style="position:absolute; left:50%; bottom:-3.5vw; transform:translateX(-50%); font-weight:900; font-size:42vw; line-height:0.72; letter-spacing:-0.05em; color:rgba(255,255,255,0.13); white-space:nowrap; pointer-events:none; user-select:none;">NADJA</div>
+</footer>
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){if(getComputedStyle(el).opacity==='0')el.classList.add('in');});},2600);
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var el=document.querySelector(a.getAttribute('href'));if(el){e.preventDefault();window.scrollTo({top:el.getBoundingClientRect().top+scrollY-80,behavior:'smooth'});}});});
+  var words=['build','design','create','ship'],ri=0;
+  setInterval(function(){var el=document.querySelector('.rotword');if(!el)return;ri=(ri+1)%words.length;el.style.opacity='0';setTimeout(function(){el.textContent=words[ri];el.style.opacity='1';},300);},2400);
+})();
+</script>
+</body>
+</html>
