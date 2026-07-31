@@ -1,0 +1,278 @@
+{
+  "_readme": "This file holds all editable text for the homepage. Edit the values, save, then rebuild (see CONTENT-GUIDE.md) and re-upload index.html. Keep the JSON structure and quotes intact. Text inside <span ...> tags controls styling/colour — you can change the words, leave the tags.",
+  "text": {
+    "nav_work": {
+      "en": "Work",
+      "nl": "Werk"
+    },
+    "nav_about": {
+      "en": "About",
+      "nl": "Over"
+    },
+    "nav_contact": {
+      "en": "Contact",
+      "nl": "Contact"
+    },
+    "hero_hi": {
+      "en": "👋&nbsp; Hey, I'm <span style=\"font-weight: 800;\">Nadja Gurk</span>",
+      "nl": "👋&nbsp; Hoi, ik ben <span style=\"font-weight: 800;\">Nadja Gurk</span>"
+    },
+    "hero_tag": {
+      "en": "Product designer turning complex business processes into simple, intuitive products, end to end. I work across finance-adjacent domains — accounting, tax, KYC — with systems thinking and <span style=\"font-weight: 800;\">AI</span>.",
+      "nl": "Productdesigner die complexe bedrijfsprocessen vertaalt naar eenvoudige, intuïtieve producten, end-to-end. Ik werk in finance-gerelateerde domeinen — boekhouding, belasting, KYC — met systeemdenken en <span style=\"font-weight: 800;\">AI</span>."
+    },
+    "based_in": {
+      "en": "BASED IN",
+      "nl": "GEVESTIGD IN"
+    },
+    "what_i_do": {
+      "en": "WHAT I DO",
+      "nl": "WAT IK DOE"
+    },
+    "focus": {
+      "en": "<span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">I </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">dig </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">into </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">real </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">problems </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">and </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">design </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">the </span><span style=\"font-family: 'Kaushan Script', cursive; color: #2E7DF7; font-size: 1.08em; padding: 0 0.06em;\">solutions</span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\"> </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">— </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">from </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">first </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">sketch </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">to </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">shipped </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">screen, </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">using </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">AI </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">to </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">move </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">faster. </span>",
+      "nl": "<span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">Ik </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">duik </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">in </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">echte </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">problemen </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">en </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">ontwerp </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">de </span><span style=\"font-family: 'Kaushan Script', cursive; color: #2E7DF7; font-size: 1.08em; padding: 0 0.06em;\">oplossingen</span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\"> </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">— </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">van </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">eerste </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">schets </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">tot </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">live </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">scherm, </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">met </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">AI </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">als </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">versneller. </span>"
+    },
+    "s1_label": {
+      "en": "Start with the problem, <span style=\"color:#2B7BF6;\">not the screen</span>.",
+      "nl": "Begin bij het probleem, <span style=\"color:#2B7BF6;\">niet het scherm</span>."
+    },
+    "s1_desc": {
+      "en": "I dig into the real need and constraints before designing anything.",
+      "nl": "Ik graaf eerst in de échte behoefte en constraints, vóór ik iets ontwerp."
+    },
+    "s2_num": {
+      "en": "0&rarr;1",
+      "nl": "0&rarr;1"
+    },
+    "s2_label": {
+      "en": "Ground decisions in <span style=\"color:#2B7BF6;\">research and data</span>.",
+      "nl": "Onderbouw keuzes met <span style=\"color:#2B7BF6;\">onderzoek en data</span>."
+    },
+    "s2_desc": {
+      "en": "Opinions are cheap — user insight and evidence guide the design.",
+      "nl": "Meningen zijn goedkoop — gebruikersinzicht en data sturen het ontwerp."
+    },
+    "s3_desc": {
+      "en": "I turn complex processes into clear, intuitive products people just get.",
+      "nl": "Ik vertaal complexe processen naar heldere, intuïtieve producten die je meteen snapt."
+    },
+    "sel_work": {
+      "en": "SELECTED WORK",
+      "nl": "GESELECTEERD WERK"
+    },
+    "cta": {
+      "en": "View case",
+      "nl": "Bekijk case"
+    },
+    "about_label": {
+      "en": "ABOUT ME",
+      "nl": "OVER MIJ"
+    },
+    "about_h": {
+      "en": "a little about myself",
+      "nl": "een stukje over mezelf"
+    },
+    "about_p1": {
+      "en": "My journey began in Psychology &amp; Communication Sciences, where I was drawn to the intricate intersection of human behaviour and technology. That curiosity carried me into a Master's in Human–Computer Interaction, where I dug deeper into the symbiotic relationship between people and tech.",
+      "nl": "Mijn pad begon in psychologie &amp; communicatiewetenschappen, waar ik gegrepen werd door het snijvlak van menselijk gedrag en technologie. Die nieuwsgierigheid bracht me naar een master Human–Computer Interaction, waar ik dieper dook in de relatie tussen mens en techniek."
+    },
+    "about_p2": {
+      "en": "Now I design at snelstart across finance-adjacent domains — accounting, tax and KYC-style flows — turning complex business processes into simple, intuitive products. I lead with systems thinking and journey mapping, validate with user research and usability testing, and work closely with product owners and developers so designs ship as intended. Lately I've also brought AI into how the team designs — prototyping faster and keeping quality consistent across ventures.",
+      "nl": "Nu ontwerp ik bij snelstart in finance-gerelateerde domeinen — boekhouding, belasting en KYC-achtige flows — waarbij ik complexe bedrijfsprocessen vertaal naar eenvoudige, intuïtieve producten. Ik werk vanuit systeemdenken en journey mapping, valideer met gebruikersonderzoek en usability-tests, en werk nauw samen met product owners en developers zodat ontwerpen worden gebouwd zoals bedoeld. De laatste tijd bracht ik ook AI in de manier waarop het team ontwerpt — sneller prototypen en consistente kwaliteit over ventures heen."
+    },
+    "about_p3": {
+      "en": "Away from the screen, I find clarity scaling rock walls, hiking, and surfing.",
+      "nl": "Buiten het scherm vind ik rust en focus op de rotswand, op de wandelpaden of op een surfboard."
+    },
+    "exp_label": {
+      "en": "EXPERIENCE",
+      "nl": "ERVARING"
+    },
+    "exp_h": {
+      "en": "the journey so far",
+      "nl": "de reis tot nu toe"
+    },
+    "exp_intro": {
+      "en": "From a foundation in human behaviour to research-led, systems-thinking product design — now leading UX with AI at snelstart, across finance-adjacent and compliance-minded products.",
+      "nl": "Van een basis in menselijk gedrag naar onderzoeksgedreven productontwerp met systeemdenken — nu leidend in UX met AI bij snelstart, in finance-gerelateerde en compliance-gerichte producten."
+    },
+    "contact_h": {
+      "en": "lets <span class=\"rotword\" style=\"font-family: 'Kaushan Script', cursive; font-weight: 400; display: inline-block; transition: opacity .3s ease;\">build</span><br>something great together.",
+      "nl": "laten we samen iets <span class=\"rotword\" style=\"font-family: 'Kaushan Script', cursive; font-weight: 400; display: inline-block; transition: opacity .3s ease;\">moois</span><br>bouwen."
+    },
+    "c_email": {
+      "en": "Email",
+      "nl": "E-mail"
+    },
+    "c_phone": {
+      "en": "Phone",
+      "nl": "Telefoon"
+    },
+    "c_social": {
+      "en": "Social",
+      "nl": "Social"
+    },
+    "work_h": {
+      "en": "check out some of my work",
+      "nl": "een greep uit mijn werk"
+    },
+    "s3_label": {
+      "en": "<span style=\"color:#2B7BF6;\">Simple</span> is hard — and worth it.",
+      "nl": "<span style=\"color:#2B7BF6;\">Simpel</span> maken is moeilijk — en het waard."
+    }
+  },
+  "cases": [
+    {
+      "num": "01",
+      "year": "AI Strategy",
+      "year_nl": "AI-strategie",
+      "title": "Designing with AI, at scale",
+      "tags": [
+        "AI",
+        "Strategy & Enablement"
+      ],
+      "desc": "I owned snelstart's UX × AI strategy end-to-end and built the Claude skills, training and review process behind it — so AI absorbs the repetitive work and designers go deeper on research, problems and the bigger picture, with quality held consistent across a complex multi-venture landscape.",
+      "desc_nl": "Ik was end-to-end eigenaar van de UX × AI-strategie van snelstart en bouwde de Claude-skills, trainingen en het reviewproces erachter — zodat AI het repetitieve werk overneemt en designers dieper kunnen op onderzoek, problemen en het grotere geheel, met consistente kwaliteit over een complex multi-venture landschap.",
+      "slot": "work-4",
+      "href": "Snelstart-AI-Strategy.html",
+      "ph": "UX × AI strategy",
+      "mediaclass": "media-laptop",
+      "basetf": "",
+      "ctacls": "",
+      "cta_en": "View case",
+      "cta_nl": "Bekijk case",
+      "arrow": "→"
+    },
+    {
+      "num": "02",
+      "year": "UX/UI Design",
+      "year_nl": "UX/UI-ontwerp",
+      "title": "Relations, reimagined",
+      "tags": [
+        "SaaS",
+        "Overview & Insights"
+      ],
+      "desc": "I owned the end-to-end redesign of snelstart's relation screen — from a bare data modal to a 360° overview that adapts to who's looking: an action-driven view for entrepreneurs and a fiscal, compliance-minded one for accountants. A systems-thinking foundation for snelstart's move to a total solution.",
+      "desc_nl": "Ik was end-to-end eigenaar van het herontwerp van het relatiescherm van snelstart — van een kale datamodal naar een 360°-overzicht dat zich aanpast aan wie kijkt: een actiegericht beeld voor ondernemers en een fiscaal, compliance-gericht beeld voor accountants. Een systeemfundament voor snelstarts groei naar een totaaloplossing.",
+      "slot": "work-3",
+      "href": "Snelstart-Relations.html",
+      "ph": "Relation overview",
+      "mediaclass": "media-laptop",
+      "basetf": "",
+      "ctacls": "",
+      "cta_en": "View case",
+      "cta_nl": "Bekijk case",
+      "arrow": "→"
+    },
+    {
+      "num": "03",
+      "year": "Compliance & Risk UX",
+      "year_nl": "Compliance & Risk UX",
+      "title": "Self-service KYC",
+      "tags": [
+        "KYC & Compliance",
+        "Identity Verification"
+      ],
+      "desc": "I owned the design of a self-service KYC studio at Nect — where B2B clients configure, brand and launch their own identity-verification and customer due-diligence flows. It turns a manual, one-off compliance setup into a product clients run themselves — cutting setup effort sharply and onboarding far more clients in parallel. Grounded in eight months of double-diamond research.",
+      "desc_nl": "Ik was eigenaar van het ontwerp van een self-service KYC-studio bij Nect — waar B2B-klanten hun eigen identiteitsverificatie- en customer-due-diligence-flows configureren, branden en lanceren. Een handmatige, eenmalige compliance-inrichting wordt een product dat klanten zelf draaien — fors minder inrichtingswerk en veel meer klanten tegelijk onboarden. Onderbouwd met acht maanden double-diamond onderzoek.",
+      "slot": "work-5",
+      "href": "KYC-Self-Service.html",
+      "ph": "Self-service KYC studio",
+      "mediaclass": "media-laptop",
+      "basetf": "",
+      "ctacls": "",
+      "cta_en": "View case",
+      "cta_nl": "Bekijk case",
+      "arrow": "→"
+    },
+    {
+      "num": "04",
+      "year": "HCI Research",
+      "year_nl": "HCI-onderzoek",
+      "title": "Big Screens, Bigger Challenges",
+      "tags": [
+        "Mobile",
+        "Accessibility"
+      ],
+      "desc": "A UX dive into smartphone reachability. As screens grow but the thumb’s reach stays constant, can accessibility features close the one-handed “dead zone”? A research study of prototypes, experiments and data analysis.",
+      "desc_nl": "Een UX-duik in de bereikbaarheid van smartphones. Schermen groeien, maar de duim niet — kunnen toegankelijkheidsfeatures de “dode zone” bij eenhandig gebruik dichten? Een onderzoek met prototypes, experimenten en data-analyse.",
+      "slot": "work-2",
+      "href": "#",
+      "ph": "Reachability study mockups",
+      "mediaclass": "media-fan",
+      "basetf": "",
+      "ctacls": "cta-disabled",
+      "cta_en": "Currently being rebuilt",
+      "cta_nl": "Wordt momenteel vernieuwd",
+      "arrow": ""
+    },
+    {
+      "num": "05",
+      "year": "UX Design",
+      "year_nl": "UX-ontwerp",
+      "title": "Beyond the Help Desk",
+      "tags": [
+        "B2B SaaS",
+        "Self-Service Portal"
+      ],
+      "desc": "As in-house UX Designer at Nect, repetitive B2B queries were overwhelming sales and support. I architected a comprehensive self-service help center — listening to user feedback, adapting, and crafting digital tools to redefine support in a digital age.",
+      "desc_nl": "Als in-house UX-designer bij Nect overspoelden herhaalde B2B-vragen sales en support. Ik bouwde een compleet self-service helpcentrum — luisteren naar feedback, bijsturen en digitale tools maken die support opnieuw definiëren.",
+      "slot": "work-1",
+      "href": "#",
+      "ph": "Nect self-service portal",
+      "mediaclass": "media-laptop",
+      "basetf": "",
+      "ctacls": "cta-disabled",
+      "cta_en": "Currently being rebuilt",
+      "cta_nl": "Wordt momenteel vernieuwd",
+      "arrow": ""
+    }
+  ],
+  "experience": [
+    {
+      "slot": "role-1",
+      "logo": "s",
+      "role": "UX/UI Designer",
+      "company": "snelstart",
+      "location": "Alkmaar, NL",
+      "dates": "Feb 2024 – Present",
+      "dates_nl": "feb 2024 – heden",
+      "summary": "Own UX/UI for accounting & business software — turning complex financial and compliance processes into simple, intuitive flows, collaborating with product owners and developers, and leading how the team designs with AI while keeping quality consistent across ventures.",
+      "summary_nl": "Eigenaar van UX/UI voor boekhoud- en bedrijfssoftware — complexe financiële en compliance-processen vertalen naar eenvoudige, intuïtieve flows, samenwerken met product owners en developers, en het team leiden in ontwerpen met AI met consistente kwaliteit over ventures heen."
+    },
+    {
+      "slot": "role-2",
+      "logo": "N",
+      "role": "User Experience Designer",
+      "company": "Nect GmbH",
+      "location": "Hamburg, DE",
+      "dates": "Sep 2022 – Jan 2024",
+      "dates_nl": "sep 2022 – jan 2024",
+      "summary": "Owned end-to-end UX at an identity-verification (KYC) company — a B2B self-service help center and a live self-service KYC product: user research, prototyping, usability testing and redesign, working in a compliance-driven domain.",
+      "summary_nl": "End-to-end UX bij een identiteitsverificatie- (KYC-)bedrijf — een B2B self-service helpcentrum en een live self-service KYC-product: gebruikersonderzoek, prototyping, usability-tests en redesign, in een compliance-gedreven domein."
+    },
+    {
+      "slot": "role-3",
+      "logo": "r",
+      "role": "Product Designer",
+      "company": "ready2order",
+      "location": "Vienna, AT",
+      "dates": "Feb 2022 – Aug 2022",
+      "dates_nl": "feb 2022 – aug 2022",
+      "summary": "Product design and usability testing for a point-of-sale platform, working user-centered across web and app surfaces.",
+      "summary_nl": "Productontwerp en usability-tests voor een kassasysteem, gebruikersgericht werkend over web en app."
+    },
+    {
+      "slot": "role-4",
+      "logo": "U",
+      "role": "MSc Human–Computer Interaction",
+      "company": "Utrecht University",
+      "location": "Utrecht, NL",
+      "dates": "Feb 2024",
+      "dates_nl": "feb 2024",
+      "summary": "Research into smartphone reachability & accessibility (the “Big Screens” case) — experiments, prototyping and data analysis, built on a foundation in Psychology & Communication Sciences.",
+      "summary_nl": "Onderzoek naar smartphonebereikbaarheid & toegankelijkheid (de “Big Screens”-case) — experimenten, prototyping en data-analyse, gebouwd op een basis in psychologie & communicatiewetenschappen."
+    }
+  ]
+}
