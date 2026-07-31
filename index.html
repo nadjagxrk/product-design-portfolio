@@ -82,21 +82,24 @@
       .hero-inner h1 > span:last-child{ font-size:50px !important; }
       .site-nav .nav-item{ font-size:11px !important; }
     }
+    /* swipe dots — only visible on the mobile carousel */
+    .work-dots{ display:none; justify-content:center; gap:7px; margin:20px auto 0; max-width:1200px; }
+    .work-dots i{ width:7px; height:7px; border-radius:50%; background:#C7D5EE; display:block; transition:background .2s ease, transform .2s ease; }
+    .work-dots i.on{ background:#2B7BF6; transform:scale(1.3); }
     @media (max-width: 760px){
-      .work-list{ gap: 20px !important; }
-      .work-list .work-card, .work-list .work-card *{ box-sizing: border-box !important; }
-      /* card becomes a simple stacked column: mockup banner on top, glass card below */
-      .work-list .work-card{ position: static !important; min-height: 0 !important; height: auto !important; width: 100% !important; max-width: 100% !important; display: flex !important; flex-direction: column !important; align-items: stretch !important; justify-content: flex-start !important; padding: 14px !important; border-radius: 24px !important; margin-bottom: 0 !important; box-shadow: 0 22px 50px rgba(20,40,80,0.20) !important; }
-      /* mockup: pinned above the glass, contained, modest fixed height */
-      .work-img{ position: static !important; inset: auto !important; right: auto !important; bottom: auto !important; top: auto !important; left: auto !important; order: -1 !important; transform: none !important; width: 100% !important; max-width: none !important; height: 156px !important; margin: 0 0 14px 0 !important; object-fit: contain !important; object-position: center !important; opacity: 1 !important; display: block !important; filter: none !important; z-index: 1 !important; }
-      .media-laptop, .media-fan{ width: 100% !important; max-width: none !important; height: 156px !important; }
-      /* glass panel: full width, sizes to its own content */
-      .work-glass{ position: relative !important; z-index: 2 !important; width: 100% !important; height: auto !important; min-height: 0 !important; padding: 22px !important; background: rgba(16,44,108,0.40) !important; backdrop-filter: blur(8px) saturate(1.1) !important; -webkit-backdrop-filter: blur(8px) saturate(1.1) !important; }
-      /* edge-to-edge screenshot banner (only on cards that have one) */
-      .work-shot{ display: block !important; order: -2 !important; width: auto !important; height: 188px !important; margin: -14px -14px 16px -14px !important; background-size: cover !important; background-position: top center !important; background-repeat: no-repeat !important; }
-      .work-shot ~ .work-img{ display: none !important; }
-      /* placeholder cards (dashed div, no real screenshot) become text-only on mobile */
-      div.work-img{ display: none !important; }
+      /* Selected work becomes a horizontal swipe carousel (text-first cards) */
+      .work-list{ display:flex !important; flex-direction:row !important; flex-wrap:nowrap !important; gap:14px !important; overflow-x:auto !important; scroll-snap-type:x mandatory !important; -webkit-overflow-scrolling:touch !important; max-width:none !important; margin:0 -6vw !important; padding:6px 6vw 10px !important; scroll-padding-left:6vw !important; perspective:none !important; scrollbar-width:none !important; }
+      .work-list::-webkit-scrollbar{ display:none !important; }
+      .work-list .work-card, .work-list .work-card *{ box-sizing:border-box !important; }
+      .work-list .work-card{ position:static !important; flex:0 0 84% !important; width:84% !important; max-width:84% !important; min-height:0 !important; height:auto !important; scroll-snap-align:center !important; display:flex !important; flex-direction:column !important; align-items:stretch !important; justify-content:flex-start !important; padding:26px 22px !important; border-radius:24px !important; margin:0 !important; transform:none !important; filter:none !important; box-shadow:0 20px 44px rgba(20,40,80,0.22) !important; }
+      /* text-first: hide all imagery inside the carousel cards */
+      .work-img, div.work-img, .work-shot{ display:none !important; }
+      /* content column: plain + transparent — the card already provides the blue surface */
+      .work-glass{ position:relative !important; z-index:2 !important; width:100% !important; height:auto !important; min-height:0 !important; padding:0 !important; background:transparent !important; border:0 !important; box-shadow:none !important; backdrop-filter:none !important; -webkit-backdrop-filter:none !important; }
+      .work-card h3{ font-size:clamp(24px,7vw,32px) !important; }
+      /* trim the teaser to keep every card compact + uniform (full text lives on the case page) */
+      .work-list .work-card .work-glass > p{ display:-webkit-box !important; -webkit-line-clamp:4 !important; -webkit-box-orient:vertical !important; overflow:hidden !important; margin:0 0 20px !important; }
+      .work-dots{ display:flex !important; }
     }
   </style>
 
@@ -437,6 +440,7 @@ let ticking=false;addEventListener('scroll',()=>{if(!ticking){ticking=true;reque
 var stackCards=Array.from(document.querySelectorAll('.work-list .work-card'));
 function updateStack(){if(window.innerWidth<=760){stackCards.forEach(function(c){c.style.transform='none';c.style.filter='none';});return;}stackCards.forEach(function(card,i){if(i===stackCards.length-1){card.style.transform='none';card.style.filter='none';return;}var cr=card.getBoundingClientRect();var nr=stackCards[i+1].getBoundingClientRect();var p=(cr.top+cr.height-nr.top)/(cr.height||1);p=Math.max(0,Math.min(1,p));card.style.transform='translateY('+(-p*26).toFixed(1)+'px) scale('+(1-p*0.09).toFixed(3)+')';card.style.filter='brightness('+(1-p*0.20).toFixed(3)+')';});}
 var stackTick=false;addEventListener('scroll',function(){if(!stackTick){stackTick=true;requestAnimationFrame(function(){stackTick=false;updateStack();});}},{passive:true});addEventListener('resize',updateStack,{passive:true});setTimeout(updateStack,60);
+(function(){var list=document.querySelector('.work-list');if(!list)return;var cards=Array.prototype.slice.call(list.querySelectorAll('.work-card'));if(cards.length<2)return;var dots=document.createElement('div');dots.className='work-dots';dots.setAttribute('aria-hidden','true');cards.forEach(function(){dots.appendChild(document.createElement('i'));});list.parentNode.insertBefore(dots,list.nextSibling);var ds=Array.prototype.slice.call(dots.children);function upd(){var lr=list.getBoundingClientRect();var center=lr.left+lr.width/2;var best=0,bd=1e9;cards.forEach(function(card,i){var r=card.getBoundingClientRect();var cc=r.left+r.width/2;var d=Math.abs(cc-center);if(d<bd){bd=d;best=i;}});ds.forEach(function(d,i){d.className=(i===best)?'on':'';});}var dt=false;list.addEventListener('scroll',function(){if(!dt){dt=true;requestAnimationFrame(function(){dt=false;upd();});}},{passive:true});addEventListener('resize',upd,{passive:true});upd();})();
 const root=document.querySelector('.site-root');
 function applyLang(lang){Object.keys(I18N).forEach(k=>{document.querySelectorAll('[data-i18n="'+k+'"]').forEach(el=>{el.innerHTML=I18N[k][lang];});});if(root)root.setAttribute('data-lang-mode',lang);document.querySelectorAll('[data-lang-btn]').forEach(b=>{b.style.opacity=(b.getAttribute('data-lang-btn')===lang)?'1':'0.4';});if(window.__initFocus)window.__initFocus();}
 document.querySelectorAll('[data-lang-btn]').forEach(b=>b.addEventListener('click',()=>applyLang(b.getAttribute('data-lang-btn'))));
