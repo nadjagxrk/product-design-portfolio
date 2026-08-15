@@ -18,8 +18,8 @@
       "nl": "👋&nbsp; Hoi, ik ben <span style=\"font-weight: 800;\">Nadja Gurk</span>"
     },
     "hero_tag": {
-      "en": "Product designer turning complex business processes into simple, intuitive products, end to end. I work across finance-adjacent domains — accounting, tax, KYC — with systems thinking and <span style=\"font-weight: 800;\">AI</span>.",
-      "nl": "Productdesigner die complexe bedrijfsprocessen vertaalt naar eenvoudige, intuïtieve producten, end-to-end. Ik werk in finance-gerelateerde domeinen — boekhouding, belasting, KYC — met systeemdenken en <span style=\"font-weight: 800;\">AI</span>."
+      "en": "Product designer. I turn complex, high-stakes processes into products people move through without hesitation — end to end, grounded in research, sharpened with <span style=\"font-weight: 800;\">AI</span>. Most of that has been in accounting, tax and KYC.",
+      "nl": "Productdesigner. Ik verander complexe processen waar veel op het spel staat in producten waar mensen zonder aarzelen doorheen bewegen — end-to-end, onderbouwd met onderzoek, aangescherpt met <span style=\"font-weight: 800;\">AI</span>. Grotendeels in boekhouding, belasting en KYC."
     },
     "based_in": {
       "en": "BASED IN",
@@ -38,8 +38,8 @@
       "nl": "Begin bij het probleem, <span style=\"color:#2B7BF6;\">niet het scherm</span>."
     },
     "s1_desc": {
-      "en": "I dig into the real need and constraints before designing anything.",
-      "nl": "Ik graaf eerst in de échte behoefte en constraints, vóór ik iets ontwerp."
+      "en": "I dig into the real need and the constraints before designing anything. Usually that means sitting with the people who do the work all day, not the people who describe it in a ticket.",
+      "nl": "Ik graaf eerst in de échte behoefte en de constraints, vóór ik iets ontwerp. Meestal betekent dat naast de mensen zitten die het werk elke dag doen — niet de mensen die het in een ticket beschrijven."
     },
     "s2_num": {
       "en": "0&rarr;1",
@@ -50,12 +50,12 @@
       "nl": "Onderbouw keuzes met <span style=\"color:#2B7BF6;\">onderzoek en data</span>."
     },
     "s2_desc": {
-      "en": "Opinions are cheap — user insight and evidence guide the design.",
-      "nl": "Meningen zijn goedkoop — gebruikersinzicht en data sturen het ontwerp."
+      "en": "Opinions are cheap. I set hypotheses, run user tests, surveys and A/B experiments, and let the evidence pick the direction — including when it picks against me.",
+      "nl": "Meningen zijn goedkoop. Ik stel hypotheses op, doe gebruikerstests, surveys en A/B-experimenten, en laat het bewijs de richting bepalen — ook als dat tegen mij in gaat."
     },
     "s3_desc": {
-      "en": "I turn complex processes into clear, intuitive products people just get.",
-      "nl": "Ik vertaal complexe processen naar heldere, intuïtieve producten die je meteen snapt."
+      "en": "I turn complex processes into products people just get. When something feels obvious to use, that is the work, not the absence of it.",
+      "nl": "Ik vertaal complexe processen naar producten die je meteen snapt. Als iets vanzelfsprekend voelt, is dat het werk — niet de afwezigheid ervan."
     },
     "sel_work": {
       "en": "SELECTED WORK",
@@ -78,8 +78,8 @@
       "nl": "Mijn pad begon in psychologie &amp; communicatiewetenschappen, waar ik gegrepen werd door het snijvlak van menselijk gedrag en technologie. Die nieuwsgierigheid bracht me naar een master Human–Computer Interaction, waar ik dieper dook in de relatie tussen mens en techniek."
     },
     "about_p2": {
-      "en": "Now I design at snelstart across finance-adjacent domains — accounting, tax and KYC-style flows — turning complex business processes into simple, intuitive products. I lead with systems thinking and journey mapping, validate with user research and usability testing, and work closely with product owners and developers so designs ship as intended. Lately I've also brought AI into how the team designs — prototyping faster and keeping quality consistent across ventures.",
-      "nl": "Nu ontwerp ik bij snelstart in finance-gerelateerde domeinen — boekhouding, belasting en KYC-achtige flows — waarbij ik complexe bedrijfsprocessen vertaal naar eenvoudige, intuïtieve producten. Ik werk vanuit systeemdenken en journey mapping, valideer met gebruikersonderzoek en usability-tests, en werk nauw samen met product owners en developers zodat ontwerpen worden gebouwd zoals bedoeld. De laatste tijd bracht ik ook AI in de manier waarop het team ontwerpt — sneller prototypen en consistente kwaliteit over ventures heen."
+      "en": "Now I design at SnelStart across finance-adjacent domains — accounting, tax and KYC-style flows — turning complex business processes into simple, intuitive products. I lead with systems thinking and journey mapping, validate with user research and usability testing, and work closely with product owners and developers so designs ship as intended. Lately I've also brought AI into how the team designs — prototyping faster and keeping quality consistent across ventures.",
+      "nl": "Nu ontwerp ik bij SnelStart in finance-gerelateerde domeinen — boekhouding, belasting en KYC-achtige flows — waarbij ik complexe bedrijfsprocessen vertaal naar eenvoudige, intuïtieve producten. Ik werk vanuit systeemdenken en journey mapping, valideer met gebruikersonderzoek en usability-tests, en werk nauw samen met product owners en developers zodat ontwerpen worden gebouwd zoals bedoeld. De laatste tijd bracht ik ook AI in de manier waarop het team ontwerpt — sneller prototypen en consistente kwaliteit over ventures heen."
     },
     "about_p3": {
       "en": "Away from the screen, I find clarity scaling rock walls, hiking, and surfing.",
@@ -94,8 +94,8 @@
       "nl": "de reis tot nu toe"
     },
     "exp_intro": {
-      "en": "From a foundation in human behaviour to research-led, systems-thinking product design — now leading UX with AI at snelstart, across finance-adjacent and compliance-minded products.",
-      "nl": "Van een basis in menselijk gedrag naar onderzoeksgedreven productontwerp met systeemdenken — nu leidend in UX met AI bij snelstart, in finance-gerelateerde en compliance-gerichte producten."
+      "en": "From a foundation in human behaviour to research-led, systems-thinking product design — now leading UX with AI at SnelStart, across finance-adjacent and compliance-minded products.",
+      "nl": "Van een basis in menselijk gedrag naar onderzoeksgedreven productontwerp met systeemdenken — nu leidend in UX met AI bij SnelStart, in finance-gerelateerde en compliance-gerichte producten."
     },
     "contact_h": {
       "en": "lets <span class=\"rotword\" style=\"font-family: 'Kaushan Script', cursive; font-weight: 400; display: inline-block; transition: opacity .3s ease;\">build</span><br>something great together.",
@@ -120,6 +120,18 @@
     "s3_label": {
       "en": "<span style=\"color:#2B7BF6;\">Simple</span> is hard — and worth it.",
       "nl": "<span style=\"color:#2B7BF6;\">Simpel</span> maken is moeilijk — en het waard."
+    },
+    "about_now": {
+      "en": "Currently designing accounting, compliance and AI tooling at SnelStart in Alkmaar. Before that, KYC at Nect in Hamburg.",
+      "nl": "Op dit moment ontwerp ik boekhoud-, compliance- en AI-tooling bij SnelStart in Alkmaar. Daarvoor KYC bij Nect in Hamburg."
+    },
+    "cv_btn": {
+      "en": "Download CV",
+      "nl": "Download cv"
+    },
+    "view_work": {
+      "en": "View work",
+      "nl": "Bekijk werk"
     }
   },
   "cases": [
@@ -132,8 +144,8 @@
         "AI",
         "Strategy & Enablement"
       ],
-      "desc": "I owned snelstart's UX × AI strategy end-to-end and built the Claude skills, training and review process behind it — so AI absorbs the repetitive work and designers go deeper on research, problems and the bigger picture, with quality held consistent across a complex multi-venture landscape.",
-      "desc_nl": "Ik was end-to-end eigenaar van de UX × AI-strategie van snelstart en bouwde de Claude-skills, trainingen en het reviewproces erachter — zodat AI het repetitieve werk overneemt en designers dieper kunnen op onderzoek, problemen en het grotere geheel, met consistente kwaliteit over een complex multi-venture landschap.",
+      "desc": "Wrote SnelStart's UX × AI strategy and built the skills, trainings and review processes behind it — so product owners across ventures can solve small design problems themselves without design quality drifting.",
+      "desc_nl": "Schreef de UX × AI-strategie van SnelStart en bouwde de skills, trainingen en reviewprocessen erachter — zodat product owners over ventures heen zelf kleine designvraagstukken oplossen, zonder dat de designkwaliteit wegzakt.",
       "slot": "work-4",
       "href": "Snelstart-AI-Strategy.html",
       "ph": "UX × AI strategy",
@@ -153,8 +165,8 @@
         "SaaS",
         "Overview & Insights"
       ],
-      "desc": "I owned the end-to-end redesign of snelstart's relation screen — from a bare data modal to a 360° overview that adapts to who's looking: an action-driven view for entrepreneurs and a fiscal, compliance-minded one for accountants. A systems-thinking foundation for snelstart's move to a total solution.",
-      "desc_nl": "Ik was end-to-end eigenaar van het herontwerp van het relatiescherm van snelstart — van een kale datamodal naar een 360°-overzicht dat zich aanpast aan wie kijkt: een actiegericht beeld voor ondernemers en een fiscaal, compliance-gericht beeld voor accountants. Een systeemfundament voor snelstarts groei naar een totaaloplossing.",
+      "desc": "One relation screen that becomes a different tool depending on whether an entrepreneur or their accountant is looking at it. Systems thinking across an ecosystem of products, laying the groundwork for SnelStart's move to a total solution.",
+      "desc_nl": "Eén relatiescherm dat een ander gereedschap wordt, afhankelijk van of een ondernemer of hun accountant kijkt. Systeemdenken over een ecosysteem van producten, als fundament voor SnelStarts groei naar een totaaloplossing.",
       "slot": "work-3",
       "href": "Snelstart-Relations.html",
       "ph": "Relation overview",
@@ -174,8 +186,8 @@
         "KYC & Compliance",
         "Identity Verification"
       ],
-      "desc": "I owned the design of a self-service KYC studio at Nect — where B2B clients configure, brand and launch their own identity-verification and customer due-diligence flows. It turns a manual, one-off compliance setup into a product clients run themselves — cutting setup effort sharply and onboarding far more clients in parallel. Grounded in eight months of double-diamond research.",
-      "desc_nl": "Ik was eigenaar van het ontwerp van een self-service KYC-studio bij Nect — waar B2B-klanten hun eigen identiteitsverificatie- en customer-due-diligence-flows configureren, branden en lanceren. Een handmatige, eenmalige compliance-inrichting wordt een product dat klanten zelf draaien — fors minder inrichtingswerk en veel meer klanten tegelijk onboarden. Onderbouwd met acht maanden double-diamond onderzoek.",
+      "desc": "Eight months of double-diamond research, including a sentiment analysis of ~40,000 support tickets. The studio that came out of it let Nect's B2B clients configure and launch their own verification flows — ≈70% fewer setup tickets and 3× onboarding capacity.",
+      "desc_nl": "Acht maanden double-diamond onderzoek, inclusief een sentimentanalyse van ~40.000 supporttickets. De studio die eruit voortkwam liet Nects B2B-klanten hun eigen verificatieflows configureren en lanceren — ≈70% minder inrichtingstickets en 3× onboardingcapaciteit.",
       "slot": "work-5",
       "href": "KYC-Self-Service.html",
       "ph": "Self-service KYC studio",
@@ -188,19 +200,19 @@
     },
     {
       "num": "04",
-      "year": "HCI Research",
-      "year_nl": "HCI-onderzoek",
-      "title": "Big Screens, Bigger Challenges",
+      "year": "UX Design",
+      "year_nl": "UX-ontwerp",
+      "title": "Beyond the Help Desk",
       "tags": [
-        "Mobile",
-        "Accessibility"
+        "B2B SaaS",
+        "Self-Service Portal"
       ],
-      "desc": "A UX dive into smartphone reachability. As screens grow but the thumb’s reach stays constant, can accessibility features close the one-handed “dead zone”? A research study of prototypes, experiments and data analysis.",
-      "desc_nl": "Een UX-duik in de bereikbaarheid van smartphones. Schermen groeien, maar de duim niet — kunnen toegankelijkheidsfeatures de “dode zone” bij eenhandig gebruik dichten? Een onderzoek met prototypes, experimenten en data-analyse.",
-      "slot": "work-2",
+      "desc": "A self-service help centre that took repetitive queries off sales and support at Nect. Research, ideation, prototyping, usability testing and redesign — owned end to end.",
+      "desc_nl": "Een self-service helpcentrum dat repetitieve vragen weghaalde bij sales en support bij Nect. Onderzoek, ideation, prototyping, usability-tests en redesign — end-to-end in eigen beheer.",
+      "slot": "work-1",
       "href": "#",
-      "ph": "Reachability study mockups",
-      "mediaclass": "media-fan",
+      "ph": "Nect self-service portal",
+      "mediaclass": "media-laptop",
       "basetf": "",
       "ctacls": "cta-disabled",
       "cta_en": "Currently being rebuilt",
@@ -209,19 +221,19 @@
     },
     {
       "num": "05",
-      "year": "UX Design",
-      "year_nl": "UX-ontwerp",
-      "title": "Beyond the Help Desk",
+      "year": "HCI Research",
+      "year_nl": "HCI-onderzoek",
+      "title": "Big Screens, Bigger Challenges",
       "tags": [
-        "B2B SaaS",
-        "Self-Service Portal"
+        "Mobile",
+        "Accessibility"
       ],
-      "desc": "As in-house UX Designer at Nect, repetitive B2B queries were overwhelming sales and support. I architected a comprehensive self-service help center — listening to user feedback, adapting, and crafting digital tools to redefine support in a digital age.",
-      "desc_nl": "Als in-house UX-designer bij Nect overspoelden herhaalde B2B-vragen sales en support. Ik bouwde een compleet self-service helpcentrum — luisteren naar feedback, bijsturen en digitale tools maken die support opnieuw definiëren.",
-      "slot": "work-1",
+      "desc": "MSc research into one-handed smartphone reachability: study design, prototypes and statistical analysis. The academic spine underneath everything else here.",
+      "desc_nl": "MSc-onderzoek naar eenhandige smartphonebereikbaarheid: onderzoeksopzet, prototypes en statistische analyse. De academische ruggengraat onder al het andere hier.",
+      "slot": "work-2",
       "href": "#",
-      "ph": "Nect self-service portal",
-      "mediaclass": "media-laptop",
+      "ph": "Reachability study mockups",
+      "mediaclass": "media-fan",
       "basetf": "",
       "ctacls": "cta-disabled",
       "cta_en": "Currently being rebuilt",
@@ -233,8 +245,8 @@
     {
       "slot": "role-1",
       "logo": "s",
-      "role": "UX/UI Designer",
-      "company": "snelstart",
+      "role": "Product Designer",
+      "company": "SnelStart",
       "location": "Alkmaar, NL",
       "dates": "Feb 2024 – Present",
       "dates_nl": "feb 2024 – heden",
