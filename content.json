@@ -14,12 +14,12 @@
       "nl": "Contact"
     },
     "hero_hi": {
-      "en": "👋&nbsp; Hey, I'm <span style=\"font-weight: 800;\">Nadja Gurk</span>",
-      "nl": "👋&nbsp; Hoi, ik ben <span style=\"font-weight: 800;\">Nadja Gurk</span>"
+      "en": "Nadja Gurk",
+      "nl": "Nadja Gurk"
     },
     "hero_tag": {
-      "en": "Product designer. I turn complex, high-stakes processes into products people move through without hesitation — end to end, grounded in research, sharpened with <span style=\"font-weight: 800;\">AI</span>. Most of that has been in accounting, tax and KYC.",
-      "nl": "Productdesigner. Ik verander complexe processen waar veel op het spel staat in producten waar mensen zonder aarzelen doorheen bewegen — end-to-end, onderbouwd met onderzoek, aangescherpt met <span style=\"font-weight: 800;\">AI</span>. Grotendeels in boekhouding, belasting en KYC."
+      "en": "I turn complex, high-stakes processes into products people move through without hesitation — end to end, grounded in research, sharpened with <span style=\"font-weight: 800;\">AI</span>. Most of that has been in accounting, tax and KYC.",
+      "nl": "Ik verander complexe processen waar veel op het spel staat in producten waar mensen zonder aarzelen doorheen bewegen — end-to-end, onderbouwd met onderzoek, aangescherpt met <span style=\"font-weight: 800;\">AI</span>. Grotendeels in boekhouding, belasting en KYC."
     },
     "based_in": {
       "en": "BASED IN",
@@ -30,12 +30,12 @@
       "nl": "WAT IK DOE"
     },
     "focus": {
-      "en": "<span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">I </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">dig </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">into </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">real </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">problems </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">and </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">design </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">the </span><span style=\"font-family: 'Kaushan Script', cursive; color: #2E7DF7; font-size: 1.08em; padding: 0 0.06em;\">solutions</span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\"> </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">— </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">from </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">first </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">sketch </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">to </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">shipped </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">screen, </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">using </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">AI </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">to </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">move </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">faster. </span>",
-      "nl": "<span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">Ik </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">duik </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">in </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">echte </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">problemen </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">en </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">ontwerp </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">de </span><span style=\"font-family: 'Kaushan Script', cursive; color: #2E7DF7; font-size: 1.08em; padding: 0 0.06em;\">oplossingen</span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\"> </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">— </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">van </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">eerste </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">schets </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">tot </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">live </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">scherm, </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">met </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">AI </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">als </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">versneller. </span>"
+      "en": "<span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">I </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">dig </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">into </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">real </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">problems </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">and </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">design </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">the </span><span style=\"font-family: 'Kaushan Script', cursive; color: #1E50C8; font-size: 1.08em; padding: 0 0.06em;\">solutions</span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\"> </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">— </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">from </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">first </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">sketch </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">to </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">shipped </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">screen, </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">using </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">AI </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">to </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">move </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">faster. </span>",
+      "nl": "<span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">Ik </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">duik </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">in </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">echte </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">problemen </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">en </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">ontwerp </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">de </span><span style=\"font-family: 'Kaushan Script', cursive; color: #1E50C8; font-size: 1.08em; padding: 0 0.06em;\">oplossingen</span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\"> </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">— </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">van </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">eerste </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">schets </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">tot </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">live </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">scherm, </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">met </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">AI </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">als </span><span data-word style=\"color:#C5CFCF; transition:color .12s linear;\">versneller. </span>"
     },
     "s1_label": {
-      "en": "Start with the problem, <span style=\"color:#2B7BF6;\">not the screen</span>.",
-      "nl": "Begin bij het probleem, <span style=\"color:#2B7BF6;\">niet het scherm</span>."
+      "en": "Start with the problem, <span style=\"color:#1E50C8;\">not the screen</span>.",
+      "nl": "Begin bij het probleem, <span style=\"color:#1E50C8;\">niet het scherm</span>."
     },
     "s1_desc": {
       "en": "I dig into the real need and the constraints before designing anything. Usually that means sitting with the people who do the work all day, not the people who describe it in a ticket.",
@@ -46,8 +46,8 @@
       "nl": "0&rarr;1"
     },
     "s2_label": {
-      "en": "Ground decisions in <span style=\"color:#2B7BF6;\">research and data</span>.",
-      "nl": "Onderbouw keuzes met <span style=\"color:#2B7BF6;\">onderzoek en data</span>."
+      "en": "Ground decisions in <span style=\"color:#1E50C8;\">research and data</span>.",
+      "nl": "Onderbouw keuzes met <span style=\"color:#1E50C8;\">onderzoek en data</span>."
     },
     "s2_desc": {
       "en": "Opinions are cheap. I set hypotheses, run user tests, surveys and A/B experiments, and let the evidence pick the direction — including when it picks against me.",
@@ -118,8 +118,8 @@
       "nl": "een greep uit mijn werk"
     },
     "s3_label": {
-      "en": "<span style=\"color:#2B7BF6;\">Simple</span> is hard — and worth it.",
-      "nl": "<span style=\"color:#2B7BF6;\">Simpel</span> maken is moeilijk — en het waard."
+      "en": "<span style=\"color:#1E50C8;\">Simple</span> is hard — and worth it.",
+      "nl": "<span style=\"color:#1E50C8;\">Simpel</span> maken is moeilijk — en het waard."
     },
     "about_now": {
       "en": "Currently designing accounting, compliance and AI tooling at SnelStart in Alkmaar. Before that, KYC at Nect in Hamburg.",
@@ -128,10 +128,6 @@
     "cv_btn": {
       "en": "Download CV",
       "nl": "Download cv"
-    },
-    "view_work": {
-      "en": "View work",
-      "nl": "Bekijk werk"
     }
   },
   "cases": [

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="868c6e13-5f5d-4a24-a690-a993e0a92f23"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Designing with AI, at scale — Nadja Gurk</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B0B0C'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='34' font-weight='800' text-anchor='middle'%3E%3Ctspan fill='white'%3En%3C/tspan%3E%3Ctspan fill='%232B7BF6'%3E.%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B0B0C'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='34' font-weight='800' text-anchor='middle'%3E%3Ctspan fill='white'%3En%3C/tspan%3E%3Ctspan fill='%231E50C8'%3E.%3C/tspan%3E%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
@@ -13,15 +12,15 @@
   :root{ color-scheme: light; }
   html{ scroll-behavior: smooth; }
   body{ margin:0; background:#FFFFFF; color:#0B0B0C; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; overflow-x:clip; -webkit-font-smoothing:antialiased; }
-  ::selection{ background:#2E7DF7; color:#fff; }
+  ::selection{ background:#1E50C8; color:#fff; }
   a{ color:inherit; }
   .wrap{ max-width:1140px; margin:0 auto; padding:0 6vw; }
   .reveal{ opacity:0; transform:translateY(28px); transition:opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
   .reveal.in{ opacity:1; transform:none; }
   .eyebrow{ display:inline-flex; align-items:center; gap:9px; font-size:13px; font-weight:800; letter-spacing:0.16em; color:#0B0B0C; }
-  .eyebrow .dot{ color:#2E7DF7; font-size:18px; }
+  .eyebrow .dot{ color:#1E50C8; font-size:18px; }
   .sec{ padding:clamp(72px,10vw,132px) 0; }
-  .ph{ border-radius:16px; background:linear-gradient(135deg,#eaf1ff,#d3e2ff); border:1px dashed rgba(43,123,246,.5); display:flex; align-items:center; justify-content:center; color:#3b6fd0; font-weight:700; font-size:14px; text-align:center; padding:16px; box-sizing:border-box; }
+  .ph{ border-radius:16px; background:linear-gradient(135deg,#eaf1ff,#d3e2ff); border:1px dashed rgba(30,80,200,.5); display:flex; align-items:center; justify-content:center; color:#3b6fd0; font-weight:700; font-size:14px; text-align:center; padding:16px; box-sizing:border-box; }
   .backbtn{ position:fixed; top:22px; left:22px; z-index:101; display:inline-flex; align-items:center; gap:8px; padding:10px 18px 10px 15px; background:rgba(255,255,255,0.82); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); border:1px solid rgba(20,40,80,0.10); border-radius:999px; box-shadow:0 10px 28px rgba(20,40,80,0.12); text-decoration:none; color:#0B0B0C; font-weight:700; font-size:14px; transition:transform .3s cubic-bezier(.16,1,.3,1); }
   .backbtn:hover{ transform:translateX(-3px); }
   .live{ display:inline-flex; align-items:center; gap:8px; font-weight:800; }
@@ -30,14 +29,15 @@
   .cta{ display:inline-flex; align-items:center; gap:10px; padding:13px 26px; border-radius:999px; font-weight:700; font-size:16px; text-decoration:none; position:relative; overflow:hidden; isolation:isolate; border:1.5px solid; }
   .cta > span{ position:relative; z-index:1; }
   .cta.on-dark{ color:#fff; border-color:rgba(255,255,255,0.35); }
-  .cta.on-dark::before{ content:''; position:absolute; inset:0; background:#2B7BF6; transform:scaleX(0); transform-origin:left center; transition:transform .45s cubic-bezier(.16,1,.3,1); z-index:0; }
+  .cta.on-dark::before{ content:''; position:absolute; inset:0; background:#1E50C8; transform:scaleX(0); transform-origin:left center; transition:transform .45s cubic-bezier(.16,1,.3,1); z-index:0; }
   .cta.on-dark:hover::before{ transform:scaleX(1); }
   .cta .ar{ transition:transform .35s cubic-bezier(.16,1,.3,1); }
   .cta:hover .ar{ transform:translateX(4px); }
   h1,h2,h3{ letter-spacing:-0.025em; }
-  .pill{ padding:9px 16px; background:#fff; border:1px solid rgba(43,123,246,.25); border-radius:999px; font-weight:700; font-size:14px; color:#2B6FD0; }
+  .pill{ padding:9px 16px; background:#fff; border:1px solid rgba(30,80,200,.25); border-radius:999px; font-weight:700; font-size:14px; color:#2B6FD0; }
   @media (max-width:820px){ .grid2{ grid-template-columns:1fr !important; } .research3{ grid-template-columns:1fr !important; } .feat{ flex-direction:column !important; } .feat .ph{ width:100% !important; } .tl-row{ flex-direction:column !important; gap:8px !important; } .tl-row > div:first-child{ flex-basis:auto !important; } }
 </style>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="868c6e13-5f5d-4a24-a690-a993e0a92f2"></script>
 </head>
 <body>
 
@@ -56,7 +56,7 @@
       <div><div style="font-size:12px; font-weight:800; letter-spacing:0.14em; color:#9AA3A3;">YEAR</div><div style="font-weight:700; margin-top:6px;">2025</div></div>
     </div>
 
-    <div class="reveal" style="margin-top:clamp(44px,6vw,72px); position:relative; border-radius:24px; overflow:hidden; background:linear-gradient(180deg,#2B7BF6,#5C9BFA); padding:clamp(28px,5vw,56px);">
+    <div class="reveal" style="margin-top:clamp(44px,6vw,72px); position:relative; border-radius:24px; overflow:hidden; background:linear-gradient(180deg,#1E50C8,#3B74E0); padding:clamp(28px,5vw,56px);">
       <video src="hero-loop.mp4" poster="hero-loop-poster.jpg" autoplay muted loop playsinline preload="metadata" style="display:block; width:100%; height:auto; border-radius:14px; box-shadow:0 22px 60px rgba(10,20,50,0.28);"></video><div style="margin-top:14px; color:rgba(255,255,255,0.92); font-size:13.5px; font-weight:600; text-align:center;">The frame-cleanup skill tidying a Figma file &mdash; the repetitive work I hand to AI, so I can focus on the problem.</div>
     </div>
   </div>
@@ -82,10 +82,10 @@
     <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">✦</span> WHAT I SET UP</div>
     <h2 class="reveal" style="margin:0 0 clamp(40px,6vw,64px); font-weight:800; font-size:clamp(28px,3.8vw,50px); line-height:1.06; max-width:720px;">Strategy, tooling, and a team that can run it.</h2>
     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:clamp(16px,2.5vw,26px);">
-      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#2E7DF7; font-size:15px; margin-bottom:8px;">01</div><div style="font-weight:800; font-size:19px;">A UX × AI strategy</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">A written strategy for where and how AI supports design, quality and consistency at Snelstart.</div></div>
-      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#2E7DF7; font-size:15px; margin-bottom:8px;">02</div><div style="font-weight:800; font-size:19px;">Claude, introduced</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">Brought Claude into the org and built fitting, Snelstart-specific skills for real design work.</div></div>
-      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#2E7DF7; font-size:15px; margin-bottom:8px;">03</div><div style="font-weight:800; font-size:19px;">Team enablement</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">Hands-on trainings for UX designers and product owners, so adoption sticks.</div></div>
-      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#2E7DF7; font-size:15px; margin-bottom:8px;">04</div><div style="font-weight:800; font-size:19px;">Consistency across ventures</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">A plan for using AI to keep one coherent experience across new products and markets.</div></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#1E50C8; font-size:15px; margin-bottom:8px;">01</div><div style="font-weight:800; font-size:19px;">A UX × AI strategy</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">A written strategy for where and how AI supports design, quality and consistency at Snelstart.</div></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#1E50C8; font-size:15px; margin-bottom:8px;">02</div><div style="font-weight:800; font-size:19px;">Claude, introduced</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">Brought Claude into the org and built fitting, Snelstart-specific skills for real design work.</div></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#1E50C8; font-size:15px; margin-bottom:8px;">03</div><div style="font-weight:800; font-size:19px;">Team enablement</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">Hands-on trainings for UX designers and product owners, so adoption sticks.</div></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#1E50C8; font-size:15px; margin-bottom:8px;">04</div><div style="font-weight:800; font-size:19px;">Consistency across ventures</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">A plan for using AI to keep one coherent experience across new products and markets.</div></div>
     </div>
   </div>
 </section>
@@ -96,10 +96,10 @@
     <h2 class="reveal" style="margin:0 0 14px; font-weight:800; font-size:clamp(28px,3.8vw,50px); line-height:1.06; max-width:820px;">Less busywork. More craft.</h2>
     <p class="reveal" style="margin:0 0 clamp(40px,5vw,56px); color:#3A3E44; font-size:clamp(16px,1.4vw,19px); line-height:1.65; max-width:860px;">The goal was never to replace design work — it’s to hand the mundane, repetitive tasks to AI so the team spends its time where it counts: research, the details, and the calls that need judgement. Along the way it lets the wider business move without waiting on a designer for every small change.</p>
     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(258px,1fr)); gap:clamp(16px,2.5vw,24px);">
-      <div class="reveal" style="position:relative; background:#fff; border:1px solid #EAEEF4; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.06);"><div style="width:46px; height:46px; border-radius:13px; background:#EAF1FF; display:flex; align-items:center; justify-content:center; margin-bottom:16px;"><svg viewBox="0 0 24 24" fill="none" stroke="#2B7BF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:23px;height:23px;"><path d="M21 2v6h-6M3 22v-6h6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/></svg></div><div style="font-weight:800; font-size:19px; margin-bottom:8px;">The mundane → to AI</div><p style="margin:0; color:#5C6066; font-size:15px; line-height:1.55;">Small, recurring design tasks and design-system checks run through the Snelstart skills instead of by hand.</p></div>
-      <div class="reveal" style="position:relative; background:#fff; border:1px solid #EAEEF4; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.06);"><div style="width:46px; height:46px; border-radius:13px; background:#EAF1FF; display:flex; align-items:center; justify-content:center; margin-bottom:16px;"><svg viewBox="0 0 24 24" fill="none" stroke="#2B7BF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:23px;height:23px;"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg></div><div style="font-weight:800; font-size:19px; margin-bottom:8px;">Designers → freed for depth</div><p style="margin:0; color:#5C6066; font-size:15px; line-height:1.55;">That reclaimed time goes straight back into research, edge cases and the craft details that make an experience feel right.</p></div>
-      <div class="reveal" style="position:relative; background:#fff; border:1px solid #EAEEF4; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.06);"><div style="width:46px; height:46px; border-radius:13px; background:#EAF1FF; display:flex; align-items:center; justify-content:center; margin-bottom:16px;"><svg viewBox="0 0 24 24" fill="none" stroke="#2B7BF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:23px;height:23px;"><circle cx="9" cy="8" r="3"/><path d="M2 20a7 7 0 0 1 14 0"/><path d="M16 6a3 3 0 0 1 0 6M22 20a6 6 0 0 0-4-5.6"/></svg></div><div style="font-weight:800; font-size:19px; margin-bottom:8px;">The business → unblocked</div><p style="margin:0; color:#5C6066; font-size:15px; line-height:1.55;">Product owners resolve smaller, repetitive design issues themselves with the skills — a designer brackets the flow where judgement matters.</p></div>
-      <div class="reveal" style="position:relative; background:#fff; border:1px dashed #C7D6EF; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.06);"><span style="position:absolute; top:18px; right:18px; background:#0E1626; color:#fff; font-weight:800; font-size:10.5px; letter-spacing:0.06em; padding:5px 10px; border-radius:999px;">EMERGING</span><div style="width:46px; height:46px; border-radius:13px; background:#EAF1FF; display:flex; align-items:center; justify-content:center; margin-bottom:16px;"><svg viewBox="0 0 24 24" fill="none" stroke="#2B7BF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:23px;height:23px;"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="8" r="3"/><path d="M6 9v6M18 11a6 6 0 0 1-6 6H9"/></svg></div><div style="font-weight:800; font-size:19px; margin-bottom:8px;">Design → into the system</div><p style="margin:0; color:#5C6066; font-size:15px; line-height:1.55;">Enabling designers to make small component changes in the design system directly — shipped as PRs, approved by devs — closing the gap between design and code.</p></div>
+      <div class="reveal" style="position:relative; background:#fff; border:1px solid #EAEEF4; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.06);"><div style="width:46px; height:46px; border-radius:13px; background:#EAF1FF; display:flex; align-items:center; justify-content:center; margin-bottom:16px;"><svg viewBox="0 0 24 24" fill="none" stroke="#1E50C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:23px;height:23px;"><path d="M21 2v6h-6M3 22v-6h6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/></svg></div><div style="font-weight:800; font-size:19px; margin-bottom:8px;">The mundane → to AI</div><p style="margin:0; color:#5C6066; font-size:15px; line-height:1.55;">Small, recurring design tasks and design-system checks run through the Snelstart skills instead of by hand.</p></div>
+      <div class="reveal" style="position:relative; background:#fff; border:1px solid #EAEEF4; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.06);"><div style="width:46px; height:46px; border-radius:13px; background:#EAF1FF; display:flex; align-items:center; justify-content:center; margin-bottom:16px;"><svg viewBox="0 0 24 24" fill="none" stroke="#1E50C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:23px;height:23px;"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg></div><div style="font-weight:800; font-size:19px; margin-bottom:8px;">Designers → freed for depth</div><p style="margin:0; color:#5C6066; font-size:15px; line-height:1.55;">That reclaimed time goes straight back into research, edge cases and the craft details that make an experience feel right.</p></div>
+      <div class="reveal" style="position:relative; background:#fff; border:1px solid #EAEEF4; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.06);"><div style="width:46px; height:46px; border-radius:13px; background:#EAF1FF; display:flex; align-items:center; justify-content:center; margin-bottom:16px;"><svg viewBox="0 0 24 24" fill="none" stroke="#1E50C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:23px;height:23px;"><circle cx="9" cy="8" r="3"/><path d="M2 20a7 7 0 0 1 14 0"/><path d="M16 6a3 3 0 0 1 0 6M22 20a6 6 0 0 0-4-5.6"/></svg></div><div style="font-weight:800; font-size:19px; margin-bottom:8px;">The business → unblocked</div><p style="margin:0; color:#5C6066; font-size:15px; line-height:1.55;">Product owners resolve smaller, repetitive design issues themselves with the skills — a designer brackets the flow where judgement matters.</p></div>
+      <div class="reveal" style="position:relative; background:#fff; border:1px dashed #C7D6EF; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.06);"><span style="position:absolute; top:18px; right:18px; background:#0E1626; color:#fff; font-weight:800; font-size:10.5px; letter-spacing:0.06em; padding:5px 10px; border-radius:999px;">EMERGING</span><div style="width:46px; height:46px; border-radius:13px; background:#EAF1FF; display:flex; align-items:center; justify-content:center; margin-bottom:16px;"><svg viewBox="0 0 24 24" fill="none" stroke="#1E50C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:23px;height:23px;"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="8" r="3"/><path d="M6 9v6M18 11a6 6 0 0 1-6 6H9"/></svg></div><div style="font-weight:800; font-size:19px; margin-bottom:8px;">Design → into the system</div><p style="margin:0; color:#5C6066; font-size:15px; line-height:1.55;">Enabling designers to make small component changes in the design system directly — shipped as PRs, approved by devs — closing the gap between design and code.</p></div>
     </div>
     <p class="reveal" style="margin:clamp(34px,4vw,48px) 0 0; color:#0B0B0C; font-weight:700; font-size:clamp(17px,1.5vw,20px); line-height:1.5; max-width:820px;">The result: less time on repetitive fixes, more on research and detail — and a business that no longer waits on design for every small change.</p>
   </div>
@@ -120,14 +120,14 @@
     </div>
 
     <div class="research3" style="display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(16px,2.5vw,26px);">
-      <div class="reveal" style="border-top:2px solid #2B7BF6; padding-top:16px;"><div style="font-weight:800; font-size:clamp(30px,3.6vw,46px); color:#2B7BF6; line-height:1;">Skills</div><div style="font-weight:700; margin-top:8px;">a growing library</div><div style="color:#5C6066; font-size:14px; margin-top:4px;">reusable, Snelstart-specific.</div></div>
-      <div class="reveal" style="border-top:2px solid #2B7BF6; padding-top:16px;"><div style="font-weight:800; font-size:clamp(30px,3.6vw,46px); color:#2B7BF6; line-height:1;">2</div><div style="font-weight:700; margin-top:8px;">groups trained</div><div style="color:#5C6066; font-size:14px; margin-top:4px;">designers &amp; product owners.</div></div>
-      <div class="reveal" style="border-top:2px solid #2B7BF6; padding-top:16px;"><div style="font-weight:800; font-size:clamp(30px,3.6vw,46px); color:#2B7BF6; line-height:1;">1</div><div style="font-weight:700; margin-top:8px;">consistent experience</div><div style="color:#5C6066; font-size:14px; margin-top:4px;">the goal across every venture.</div></div>
+      <div class="reveal" style="border-top:2px solid #1E50C8; padding-top:16px;"><div style="font-weight:800; font-size:clamp(30px,3.6vw,46px); color:#1E50C8; line-height:1;">Skills</div><div style="font-weight:700; margin-top:8px;">a growing library</div><div style="color:#5C6066; font-size:14px; margin-top:4px;">reusable, Snelstart-specific.</div></div>
+      <div class="reveal" style="border-top:2px solid #1E50C8; padding-top:16px;"><div style="font-weight:800; font-size:clamp(30px,3.6vw,46px); color:#1E50C8; line-height:1;">2</div><div style="font-weight:700; margin-top:8px;">groups trained</div><div style="color:#5C6066; font-size:14px; margin-top:4px;">designers &amp; product owners.</div></div>
+      <div class="reveal" style="border-top:2px solid #1E50C8; padding-top:16px;"><div style="font-weight:800; font-size:clamp(30px,3.6vw,46px); color:#1E50C8; line-height:1;">1</div><div style="font-weight:700; margin-top:8px;">consistent experience</div><div style="color:#5C6066; font-size:14px; margin-top:4px;">the goal across every venture.</div></div>
     </div>
   </div>
 </section>
 
-<section class="sec" style="background:linear-gradient(180deg,#2B7BF6 0%,#4E92F8 100%); color:#fff;">
+<section class="sec" style="background:linear-gradient(180deg,#1E50C8 0%,#3B74E0 100%); color:#fff;">
   <div class="wrap">
     <div class="reveal eyebrow" style="color:#fff; margin-bottom:14px;"><span class="dot" style="color:#fff;">✦</span> WHAT I SET OUT TO DO</div>
     <h2 class="reveal" style="margin:0 0 clamp(40px,6vw,64px); color:#fff; font-weight:800; font-size:clamp(28px,4vw,52px); line-height:1.06; max-width:760px;">Turn AI from a buzzword into a way of working.</h2>
@@ -147,7 +147,7 @@
 
     <div class="feat reveal" style="display:flex; gap:clamp(24px,4vw,56px); align-items:center; margin-bottom:clamp(40px,6vw,72px);">
       <div style="flex:1;">
-        <div style="color:#2B7BF6; font-weight:800; font-size:15px; margin-bottom:10px;">Move 01</div>
+        <div style="color:#1E50C8; font-weight:800; font-size:15px; margin-bottom:10px;">Move 01</div>
         <h3 style="margin:0 0 12px; font-weight:800; font-size:clamp(22px,2.4vw,32px);">Skills, not one-off prompts</h3>
         <p style="margin:0; color:#3A3E44; font-size:16px; line-height:1.65;">I built reusable Claude skills tuned to Snelstart — its design system, tone of voice and review process — so good output is repeatable, not down to who wrote the best prompt that day.</p>
       </div>
@@ -156,21 +156,21 @@
 
     <div class="feat reveal" style="display:flex; flex-direction:row-reverse; gap:clamp(24px,4vw,56px); align-items:center; margin-bottom:clamp(40px,6vw,72px);">
       <div style="flex:1;">
-        <div style="color:#2B7BF6; font-weight:800; font-size:15px; margin-bottom:10px;">Move 02</div>
+        <div style="color:#1E50C8; font-weight:800; font-size:15px; margin-bottom:10px;">Move 02</div>
         <h3 style="margin:0 0 12px; font-weight:800; font-size:clamp(22px,2.4vw,32px);">Bring POs along, not just designers</h3>
         <p style="margin:0; color:#3A3E44; font-size:16px; line-height:1.65;">Training product owners as well as designers meant AI became part of how the whole team works — shared language, shared tools, fewer bottlenecks between disciplines.</p>
       </div>
       <div style="flex:1;">
 <style>
 #d2 .d2-stage{position:relative;display:grid;min-height:300px;background:#fff;border:1px solid #E7ECF5;border-radius:16px;box-shadow:0 22px 60px rgba(20,40,80,.14);overflow:hidden;}
-#d2 .d2-prog{position:absolute;top:0;left:0;height:3px;background:#2B7BF6;width:0;z-index:5;}
+#d2 .d2-prog{position:absolute;top:0;left:0;height:3px;background:#1E50C8;width:0;z-index:5;}
 #d2 .d2-slide{grid-area:1/1;padding:26px 32px 18px;opacity:0;transition:opacity .45s ease;display:flex;flex-direction:column;background:#fff;}
 #d2 .d2-slide.on{opacity:1;z-index:2;}
-#d2 .d2-kick{font-size:12px;font-weight:800;letter-spacing:0.16em;color:#2B7BF6;margin-bottom:14px;}
+#d2 .d2-kick{font-size:12px;font-weight:800;letter-spacing:0.16em;color:#1E50C8;margin-bottom:14px;}
 #d2 .d2-h{font-weight:800;font-size:clamp(20px,2.3vw,28px);letter-spacing:-0.02em;color:#0E1626;line-height:1.08;}
 #d2 .d2-sub{color:#5A6473;font-size:14px;margin-top:10px;line-height:1.45;max-width:100%;}
 #d2 .d2-li{display:flex;gap:11px;align-items:flex-start;margin-top:11px;font-size:14.5px;color:#26303D;line-height:1.35;}
-#d2 .d2-li .dot{flex:0 0 auto;width:8px;height:8px;border-radius:50%;background:#2B7BF6;margin-top:7px;}
+#d2 .d2-li .dot{flex:0 0 auto;width:8px;height:8px;border-radius:50%;background:#1E50C8;margin-top:7px;}
 #d2 .d2-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
 #d2 .d2-chip{background:#F3F6FB;border:1px solid #E2E9F4;border-radius:999px;padding:8px 15px;font-weight:800;font-size:13.5px;color:#26303D;}
 #d2 .d2-flow{display:flex;align-items:center;gap:7px;margin-top:18px;flex-wrap:wrap;}
@@ -179,11 +179,11 @@
 #d2 .d2-arw{color:#B9C6DA;font-weight:900;}
 #d2 .d2-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:12px;}
 #d2 .d2-mark{font-weight:800;font-size:14px;letter-spacing:-0.01em;}
-#d2 .d2-mark .b{color:#2B7BF6;}#d2 .d2-mark .o{color:#F5811F;}
+#d2 .d2-mark .b{color:#1E50C8;}#d2 .d2-mark .o{color:#F5811F;}
 #d2 .d2-pg{color:#9AA4B4;font-size:12px;font-weight:800;letter-spacing:0.04em;}
 #d2 .d2-dots{display:flex;gap:7px;justify-content:center;padding:14px 0 4px;}
 #d2 .d2-dots i{width:7px;height:7px;border-radius:50%;background:#D5DEEC;transition:all .3s;}
-#d2 .d2-dots i.on{background:#2B7BF6;width:22px;border-radius:4px;}
+#d2 .d2-dots i.on{background:#1E50C8;width:22px;border-radius:4px;}
 </style>
 <div id="d2">
   <div class="d2-stage">
@@ -236,7 +236,7 @@ show(0);setInterval(function(){i=(i+1)%sl.length;show(i);},dur);})();
 
     <div class="feat reveal" style="display:flex; gap:clamp(24px,4vw,56px); align-items:center;">
       <div style="flex:1;">
-        <div style="color:#2B7BF6; font-weight:800; font-size:15px; margin-bottom:10px;">Move 03</div>
+        <div style="color:#1E50C8; font-weight:800; font-size:15px; margin-bottom:10px;">Move 03</div>
         <h3 style="margin:0 0 12px; font-weight:800; font-size:clamp(22px,2.4vw,32px);">A review skill that guards quality</h3>
         <p style="margin:0; color:#3A3E44; font-size:16px; line-height:1.65;">A dedicated review skill checks work against general UX principles and, above all, the Snelstart design system — so faster output never means lower quality.</p>
       </div>
@@ -247,13 +247,13 @@ show(0);setInterval(function(){i=(i+1)%sl.length;show(i);},dur);})();
 
 <section class="sec" style="background:#0B0B0C; color:#fff;">
   <div class="wrap">
-    <div class="reveal eyebrow" style="color:#fff; margin-bottom:14px;"><span class="dot" style="color:#4E92F8;">✦</span> THE JOURNEY</div>
+    <div class="reveal eyebrow" style="color:#fff; margin-bottom:14px;"><span class="dot" style="color:#3B74E0;">✦</span> THE JOURNEY</div>
     <h2 class="reveal" style="margin:0 0 clamp(44px,6vw,72px); color:#fff; font-weight:800; font-size:clamp(28px,4vw,52px); line-height:1.06; max-width:760px;">From curiosity to capability.</h2>
     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:clamp(24px,3.5vw,40px);">
-      <div class="reveal" style="position:relative; border-top:1px solid rgba(255,255,255,0.18); padding-top:30px;"><div style="position:absolute; top:-18px; left:0; width:36px; height:36px; border-radius:50%; background:#4E92F8; color:#0B0B0C; font-weight:800; font-size:15px; display:flex; align-items:center; justify-content:center;">01</div><div style="font-weight:800; font-size:21px; margin-bottom:10px;">Assess</div><p style="margin:0; color:rgba(255,255,255,0.72); font-size:15px; line-height:1.6;">Understood how the team already worked, where AI could genuinely help, and what would get in the way of adoption.</p></div>
-      <div class="reveal" style="position:relative; border-top:1px solid rgba(255,255,255,0.18); padding-top:30px;"><div style="position:absolute; top:-18px; left:0; width:36px; height:36px; border-radius:50%; background:#4E92F8; color:#0B0B0C; font-weight:800; font-size:15px; display:flex; align-items:center; justify-content:center;">02</div><div style="font-weight:800; font-size:21px; margin-bottom:10px;">Strategise</div><p style="margin:0; color:rgba(255,255,255,0.72); font-size:15px; line-height:1.6;">Wrote the UX × AI strategy — principles, use cases and a view on keeping the experience consistent across ventures.</p></div>
-      <div class="reveal" style="position:relative; border-top:1px solid rgba(255,255,255,0.18); padding-top:30px;"><div style="position:absolute; top:-18px; left:0; width:36px; height:36px; border-radius:50%; background:#4E92F8; color:#0B0B0C; font-weight:800; font-size:15px; display:flex; align-items:center; justify-content:center;">03</div><div style="font-weight:800; font-size:21px; margin-bottom:10px;">Enable</div><p style="margin:0; color:rgba(255,255,255,0.72); font-size:15px; line-height:1.6;">Introduced Claude, built Snelstart-specific skills, and ran hands-on trainings for the team.</p></div>
-      <div class="reveal" style="position:relative; border-top:1px solid rgba(255,255,255,0.18); padding-top:30px;"><div style="position:absolute; top:-18px; left:0; width:36px; height:36px; border-radius:50%; background:#4E92F8; color:#0B0B0C; font-weight:800; font-size:15px; display:flex; align-items:center; justify-content:center;">04</div><div style="font-weight:800; font-size:21px; margin-bottom:10px;">Scale</div><p style="margin:0; color:rgba(255,255,255,0.72); font-size:15px; line-height:1.6;">Grew the skills library, refined the playbooks, and pushed the consistency vision as new ventures come online.</p></div>
+      <div class="reveal" style="position:relative; border-top:1px solid rgba(255,255,255,0.18); padding-top:30px;"><div style="position:absolute; top:-18px; left:0; width:36px; height:36px; border-radius:50%; background:#3B74E0; color:#0B0B0C; font-weight:800; font-size:15px; display:flex; align-items:center; justify-content:center;">01</div><div style="font-weight:800; font-size:21px; margin-bottom:10px;">Assess</div><p style="margin:0; color:rgba(255,255,255,0.72); font-size:15px; line-height:1.6;">Understood how the team already worked, where AI could genuinely help, and what would get in the way of adoption.</p></div>
+      <div class="reveal" style="position:relative; border-top:1px solid rgba(255,255,255,0.18); padding-top:30px;"><div style="position:absolute; top:-18px; left:0; width:36px; height:36px; border-radius:50%; background:#3B74E0; color:#0B0B0C; font-weight:800; font-size:15px; display:flex; align-items:center; justify-content:center;">02</div><div style="font-weight:800; font-size:21px; margin-bottom:10px;">Strategise</div><p style="margin:0; color:rgba(255,255,255,0.72); font-size:15px; line-height:1.6;">Wrote the UX × AI strategy — principles, use cases and a view on keeping the experience consistent across ventures.</p></div>
+      <div class="reveal" style="position:relative; border-top:1px solid rgba(255,255,255,0.18); padding-top:30px;"><div style="position:absolute; top:-18px; left:0; width:36px; height:36px; border-radius:50%; background:#3B74E0; color:#0B0B0C; font-weight:800; font-size:15px; display:flex; align-items:center; justify-content:center;">03</div><div style="font-weight:800; font-size:21px; margin-bottom:10px;">Enable</div><p style="margin:0; color:rgba(255,255,255,0.72); font-size:15px; line-height:1.6;">Introduced Claude, built Snelstart-specific skills, and ran hands-on trainings for the team.</p></div>
+      <div class="reveal" style="position:relative; border-top:1px solid rgba(255,255,255,0.18); padding-top:30px;"><div style="position:absolute; top:-18px; left:0; width:36px; height:36px; border-radius:50%; background:#3B74E0; color:#0B0B0C; font-weight:800; font-size:15px; display:flex; align-items:center; justify-content:center;">04</div><div style="font-weight:800; font-size:21px; margin-bottom:10px;">Scale</div><p style="margin:0; color:rgba(255,255,255,0.72); font-size:15px; line-height:1.6;">Grew the skills library, refined the playbooks, and pushed the consistency vision as new ventures come online.</p></div>
     </div>
     <div class="reveal" style="margin-top:clamp(44px,6vw,64px);"><a href="Snelstart-Relations.html" class="cta on-dark"><span>Next case — Relations, reimagined</span><span class="ar">→</span></a></div>
   </div>
@@ -282,7 +282,7 @@ show(0);setInterval(function(){i=(i+1)%sl.length;show(i);},dur);})();
   </div>
 </section>
 
-<footer style="position:relative; background:#2B7BF6; padding:clamp(70px,10vw,120px) 0 0; overflow:hidden;">
+<footer style="position:relative; background:#1E50C8; padding:clamp(70px,10vw,120px) 0 0; overflow:hidden;">
   <div class="wrap" style="position:relative; z-index:2;">
     <div class="reveal" style="display:flex; justify-content:space-between; align-items:center; gap:40px; flex-wrap:wrap;">
       <h2 style="margin:0; color:#fff; font-weight:800; font-size:clamp(34px,5.4vw,80px); line-height:0.98;">lets <span class="rotword" style="font-family:'Kaushan Script',cursive; font-weight:400; display:inline-block; transition:opacity .3s ease;">build</span><br>something great together.</h2>
@@ -304,6 +304,28 @@ show(0);setInterval(function(){i=(i+1)%sl.length;show(i);},dur);})();
   document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var el=document.querySelector(a.getAttribute('href'));if(el){e.preventDefault();window.scrollTo({top:el.getBoundingClientRect().top+scrollY-80,behavior:'smooth'});}});});
   var words=['build','design','create','ship'],ri=0;
   setInterval(function(){var el=document.querySelector('.rotword');if(!el)return;ri=(ri+1)%words.length;el.style.opacity='0';setTimeout(function(){el.textContent=words[ri];el.style.opacity='1';},300);},2400);
+})();
+</script>
+<style id="fx-enhance-style">
+.reveal{transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1),filter .9s cubic-bezier(.16,1,.3,1);}
+
+.fx-lift{transform:translateY(var(--py,0px));transition:transform .55s cubic-bezier(.16,1,.3,1),box-shadow .55s cubic-bezier(.16,1,.3,1);will-change:transform;}
+.fx-lift:hover{transform:translateY(calc(var(--py,0px) - 6px)) scale(1.006);box-shadow:0 30px 60px rgba(10,20,50,.26);}
+@media (prefers-reduced-motion: reduce){.reveal:not(.in){filter:none;}.fx-lift,.fx-lift:hover{transform:none;}}
+</style>
+<script id="fx-enhance-js">
+(function(){
+ var reduce=matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ document.querySelectorAll('.reveal').forEach(function(el){var sibs=[].slice.call(el.parentNode.children).filter(function(c){return c.classList&&c.classList.contains('reveal');});var i=sibs.indexOf(el);if(i>0)el.style.transitionDelay=((i%4)*70)+'ms';});
+ var par=[];
+ function consider(img){if(img.dataset.fx)return;if(img.closest('.d2-stage,header,nav,footer,.backbtn'))return;if(!img.naturalWidth||img.naturalWidth<380)return;img.dataset.fx='1';img.classList.add('fx-lift');par.push(img);}
+ document.querySelectorAll('img').forEach(function(img){if(img.complete)consider(img);else img.addEventListener('load',function(){consider(img);});});
+ return;
+ var tick=false;
+ function upd(){var vh=innerHeight||1;par.forEach(function(el){var r=el.getBoundingClientRect();if(r.bottom<-80||r.top>vh+80)return;if(r.height<200){el.style.setProperty('--py','0px');return;}var c=r.top+r.height/2;var p=(c-vh/2)/vh;var y=Math.max(-9,Math.min(9,-p*13));el.style.setProperty('--py',y.toFixed(1)+'px');});}
+ addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(function(){tick=false;upd();});}},{passive:true});
+ addEventListener('resize',upd,{passive:true});
+ setTimeout(upd,300);
 })();
 </script>
 </body>
