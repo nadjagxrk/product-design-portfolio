@@ -18,8 +18,8 @@
       "nl": "Hoi, ik ben <span style=\"font-weight: 800;\">Nadja Gurk</span>"
     },
     "hero_tag": {
-      "en": "I turn complex, high-stakes processes — accounting, tax, KYC — into clear, trustworthy products. Research-led, AI-fluent, and taken all the way into the code.",
-      "nl": "Ik maak van complexe processen waar veel op het spel staat — boekhouding, belasting, KYC — heldere, betrouwbare producten. Onderzoeksgedreven, AI-vaardig, en tot in de code doorgevoerd."
+      "en": "I turn complex, high-stakes processes — accounting, tax, KYC — into clear, trustworthy products, and design how people stay in charge when <span style=\"font-weight: 800;\">AI</span> does the producing. Research-led, and taken all the way into the code.",
+      "nl": "Ik maak van complexe processen waar veel op het spel staat — boekhouding, belasting, KYC — heldere, betrouwbare producten, en ontwerp hoe mensen de regie houden als <span style=\"font-weight: 800;\">AI</span> het maakwerk doet. Onderzoeksgedreven, en tot in de code doorgevoerd."
     },
     "based_in": {
       "en": "BASED IN",
@@ -78,8 +78,8 @@
       "nl": "Mijn pad begon in psychologie &amp; communicatiewetenschappen, waar ik gegrepen werd door het snijvlak van menselijk gedrag en technologie. Die nieuwsgierigheid bracht me naar een master Human–Computer Interaction, waar ik dieper dook in de relatie tussen mens en techniek."
     },
     "about_p2": {
-      "en": "Now I design at SnelStart across finance-adjacent domains — accounting, tax and KYC-style flows — turning complex business processes into simple, intuitive products. I lead with systems thinking and journey mapping, validate with user research and usability testing, and work closely with product owners and developers so designs ship as intended. Lately I've also brought AI into how the team designs — prototyping faster and keeping quality consistent across ventures.",
-      "nl": "Nu ontwerp ik bij SnelStart in finance-gerelateerde domeinen — boekhouding, belasting en KYC-achtige flows — waarbij ik complexe bedrijfsprocessen vertaal naar eenvoudige, intuïtieve producten. Ik werk vanuit systeemdenken en journey mapping, valideer met gebruikersonderzoek en usability-tests, en werk nauw samen met product owners en developers zodat ontwerpen worden gebouwd zoals bedoeld. De laatste tijd bracht ik ook AI in de manier waarop het team ontwerpt — sneller prototypen en consistente kwaliteit over ventures heen."
+      "en": "Now I design at SnelStart across finance-adjacent domains — accounting, tax and KYC-style flows — turning complex business processes into simple, intuitive products. I lead with systems thinking and journey mapping, validate with user research and usability testing, and work closely with product owners and developers so designs ship as intended. Lately I've also set up how the team designs with AI: product owners get a designer to ask, and a designer approves what ships.",
+      "nl": "Nu ontwerp ik bij SnelStart in finance-gerelateerde domeinen — boekhouding, belasting en KYC-achtige flows — waarbij ik complexe bedrijfsprocessen vertaal naar eenvoudige, intuïtieve producten. Ik werk vanuit systeemdenken en journey mapping, valideer met gebruikersonderzoek en usability-tests, en werk nauw samen met product owners en developers zodat ontwerpen worden gebouwd zoals bedoeld. De laatste tijd zette ik ook op hoe het team met AI ontwerpt: product owners hebben een designer om te vragen, en een designer keurt goed wat live gaat."
     },
     "about_p3": {
       "en": "Away from the screen, I find clarity scaling rock walls, hiking, and surfing.",
@@ -94,8 +94,8 @@
       "nl": "de reis tot nu toe"
     },
     "exp_intro": {
-      "en": "From a foundation in human behaviour to research-led, systems-thinking product design — now leading UX with AI at SnelStart, across finance-adjacent and compliance-minded products.",
-      "nl": "Van een basis in menselijk gedrag naar onderzoeksgedreven productontwerp met systeemdenken — nu leidend in UX met AI bij SnelStart, in finance-gerelateerde en compliance-gerichte producten."
+      "en": "From a foundation in human behaviour to research-led, systems-thinking product design — now at SnelStart, across accounting, compliance and AI tooling.",
+      "nl": "Van een basis in menselijk gedrag naar onderzoeksgedreven productontwerp met systeemdenken — nu bij SnelStart, in boekhoud-, compliance- en AI-tooling."
     },
     "contact_h": {
       "en": "lets <span class=\"rotword\" style=\"font-family: 'Kaushan Script', cursive; font-weight: 400; display: inline-block; transition: opacity .3s ease;\">build</span><br>something great together.",
@@ -211,11 +211,32 @@
         "KYC & Compliance",
         "Identity Verification"
       ],
-      "desc": "Eight months of double-diamond research, including a sentiment analysis of ~40,000 support tickets. The studio that came out of it let Nect's B2B clients configure and launch their own verification flows — ≈70% fewer setup tickets and 3× onboarding capacity.",
-      "desc_nl": "Acht maanden double-diamond onderzoek, inclusief een sentimentanalyse van ~40.000 supporttickets. De studio die eruit voortkwam liet Nects B2B-klanten hun eigen verificatieflows configureren en lanceren — ≈70% minder inrichtingstickets en 3× onboardingcapaciteit.",
+      "desc": "Eight months of double-diamond research, including a sentiment analysis of ~40,000 support tickets. The self-service tool that came out of it let Nect's B2B clients configure and launch their own verification flows — ≈70% fewer setup tickets and 3× onboarding capacity.",
+      "desc_nl": "Acht maanden double-diamond onderzoek, inclusief een sentimentanalyse van ~40.000 supporttickets. De self-service tool die eruit voortkwam liet Nects B2B-klanten hun eigen verificatieflows configureren en lanceren — ≈70% minder inrichtingstickets en 3× onboardingcapaciteit.",
       "slot": "work-5",
       "href": "KYC-Self-Service.html",
       "ph": "Self-service KYC studio",
+      "mediaclass": "media-laptop",
+      "basetf": "",
+      "ctacls": "",
+      "cta_en": "View case",
+      "cta_nl": "Bekijk case",
+      "arrow": "→"
+    },
+    {
+      "num": "05",
+      "year": "KYC & Compliance",
+      "year_nl": "KYC & compliance",
+      "title": "The system checks. A person decides.",
+      "tags": [
+        "Human-in-the-loop",
+        "Backoffice"
+      ],
+      "desc": "A review flow for SnelStart's compliance team: the system gathers, checks and bundles the evidence, and a person makes every decision that matters. Now in build: I implement the UI from existing components, front-end connects the backend.",
+      "desc_nl": "Een beoordelingsflow voor het compliance-team van SnelStart: het systeem verzamelt, controleert en bundelt het bewijs, en een mens neemt elk besluit dat ertoe doet. Nu in bouw: ik implementeer de UI met bestaande componenten, front-end koppelt de backend.",
+      "slot": "work-7",
+      "href": "KYC-Review.html",
+      "ph": "KYC review flow",
       "mediaclass": "media-laptop",
       "basetf": "",
       "ctacls": "",
@@ -233,8 +254,8 @@
       "location": "Alkmaar, NL",
       "dates": "Feb 2024 – Present",
       "dates_nl": "feb 2024 – heden",
-      "summary": "Own UX/UI for accounting & business software — turning complex financial and compliance processes into simple, intuitive flows, collaborating with product owners and developers, and leading how the team designs with AI while keeping quality consistent across ventures.",
-      "summary_nl": "Eigenaar van UX/UI voor boekhoud- en bedrijfssoftware — complexe financiële en compliance-processen vertalen naar eenvoudige, intuïtieve flows, samenwerken met product owners en developers, en het team leiden in ontwerpen met AI met consistente kwaliteit over ventures heen."
+      "summary": "Own UX/UI for accounting & business software — turning complex financial and compliance processes into simple, intuitive flows, collaborating with product owners and developers, and setting up how the team designs with AI, with quality that stays consistent across ventures.",
+      "summary_nl": "Eigenaar van UX/UI voor boekhoud- en bedrijfssoftware — complexe financiële en compliance-processen vertalen naar eenvoudige, intuïtieve flows, samenwerken met product owners en developers, en opzetten hoe het team met AI ontwerpt, met consistente kwaliteit over ventures heen."
     },
     {
       "slot": "role-2",
@@ -257,6 +278,28 @@
       "dates_nl": "feb 2022 – aug 2022",
       "summary": "Product design and usability testing for a point-of-sale platform, working user-centered across web and app surfaces.",
       "summary_nl": "Productontwerp en usability-tests voor een kassasysteem, gebruikersgericht werkend over web en app."
+    },
+    {
+      "slot": "role-5",
+      "logo": "J",
+      "role": "Working Student, Product Management",
+      "company": "JENOPTIK Optical Systems",
+      "location": "Jena, DE",
+      "dates": "Jun 2021 – Aug 2021",
+      "dates_nl": "jun 2021 – aug 2021",
+      "summary": "Working student in product management for optical systems.",
+      "summary_nl": "Werkstudent productmanagement voor optische systemen."
+    },
+    {
+      "slot": "role-6",
+      "logo": "Z",
+      "role": "Working Student, Marketing Communications",
+      "company": "Carl Zeiss Meditec AG",
+      "location": "Jena, DE",
+      "dates": "Mar 2020 – May 2021",
+      "dates_nl": "mrt 2020 – mei 2021",
+      "summary": "Working student in marketing communications at a medical technology company. Worked on an internal media-asset system for sales and marketing teams.",
+      "summary_nl": "Werkstudent marketingcommunicatie bij een medisch-technologisch bedrijf. Werkte aan een intern media-assetsysteem voor sales- en marketingteams."
     },
     {
       "slot": "role-4",
