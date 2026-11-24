@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="868c6e13-5f5d-4a24-a690-a993e0a92f23"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design that doesn't stop at the hand-off — Nadja Gurk</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B0B0C'/%3E%3Ctext x='32' y='45' font-family='Helvetica,Arial,sans-serif' font-size='34' font-weight='800' text-anchor='middle'%3E%3Ctspan fill='white'%3En%3C/tspan%3E%3Ctspan fill='%232B7BF6'%3E.%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+  :root{ color-scheme: light; }
+  html{ scroll-behavior: smooth; }
+  body{ margin:0; background:#FFFFFF; color:#0B0B0C; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; overflow-x:clip; -webkit-font-smoothing:antialiased; }
+  ::selection{ background:#2E7DF7; color:#fff; }
+  a{ color:inherit; }
+  .wrap{ max-width:1140px; margin:0 auto; padding:0 6vw; }
+  .reveal{ opacity:0; transform:translateY(28px); transition:opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
+  .reveal.in{ opacity:1; transform:none; }
+  .eyebrow{ display:inline-flex; align-items:center; gap:9px; font-size:13px; font-weight:800; letter-spacing:0.16em; color:#0B0B0C; }
+  .eyebrow .dot{ color:#2E7DF7; font-size:18px; }
+  .sec{ padding:clamp(72px,10vw,132px) 0; }
+  .ph{ border-radius:16px; background:linear-gradient(135deg,#eaf1ff,#d3e2ff); border:1px dashed rgba(43,123,246,.5); display:flex; align-items:center; justify-content:center; color:#3b6fd0; font-weight:700; font-size:14px; text-align:center; padding:16px; box-sizing:border-box; }
+  .backbtn{ position:fixed; top:22px; left:22px; z-index:101; display:inline-flex; align-items:center; gap:8px; padding:10px 18px 10px 15px; background:rgba(255,255,255,0.82); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); border:1px solid rgba(20,40,80,0.10); border-radius:999px; box-shadow:0 10px 28px rgba(20,40,80,0.12); text-decoration:none; color:#0B0B0C; font-weight:700; font-size:14px; transition:transform .3s cubic-bezier(.16,1,.3,1); }
+  .backbtn:hover{ transform:translateX(-3px); }
+  .live{ display:inline-flex; align-items:center; gap:8px; font-weight:800; }
+  .live-dot{ width:9px; height:9px; border-radius:50%; background:#16A34A; box-shadow:0 0 0 0 rgba(22,163,74,.5); animation:pulse 1.7s infinite; }
+  @keyframes pulse{ 0%{ box-shadow:0 0 0 0 rgba(22,163,74,.5);} 70%{ box-shadow:0 0 0 9px rgba(22,163,74,0);} 100%{ box-shadow:0 0 0 0 rgba(22,163,74,0);} }
+  .cta{ display:inline-flex; align-items:center; gap:10px; padding:13px 26px; border-radius:999px; font-weight:700; font-size:16px; text-decoration:none; position:relative; overflow:hidden; isolation:isolate; border:1.5px solid; }
+  .cta > span{ position:relative; z-index:1; }
+  .cta.on-dark{ color:#fff; border-color:rgba(255,255,255,0.35); }
+  .cta.on-dark::before{ content:''; position:absolute; inset:0; background:#2B7BF6; transform:scaleX(0); transform-origin:left center; transition:transform .45s cubic-bezier(.16,1,.3,1); z-index:0; }
+  .cta.on-dark:hover::before{ transform:scaleX(1); }
+  .cta .ar{ transition:transform .35s cubic-bezier(.16,1,.3,1); }
+  .cta:hover .ar{ transform:translateX(4px); }
+  h1,h2,h3{ letter-spacing:-0.025em; }
+  .pill{ padding:9px 16px; background:#fff; border:1px solid rgba(43,123,246,.25); border-radius:999px; font-weight:700; font-size:14px; color:#2B6FD0; }
+  @media (max-width:820px){ .grid2{ grid-template-columns:1fr !important; } .research3{ grid-template-columns:1fr !important; } .feat{ flex-direction:column !important; } .feat .ph{ width:100% !important; } .tl-row{ flex-direction:column !important; gap:8px !important; } .tl-row > div:first-child{ flex-basis:auto !important; } }
+  #pipe .pp-row{ display:flex; align-items:stretch; gap:8px; }
+  #pipe .pp-node{ flex:1; background:#fff; border-radius:14px; padding:14px 14px; box-shadow:0 14px 36px rgba(10,20,50,0.18); }
+  #pipe .pp-dark{ background:#0E1626; color:#fff; }
+  #pipe .pp-now{ background:#FFF4EA; border:1.5px solid #F5811F; }
+  #pipe .pp-goal{ background:rgba(255,255,255,0.16); color:#fff; border:1.5px dashed rgba(255,255,255,0.7); box-shadow:none; }
+  #pipe .pp-k{ font-size:10.5px; font-weight:800; letter-spacing:0.14em; color:#2B7BF6; margin-bottom:6px; }
+  #pipe .pp-dark .pp-k{ color:#8DB8FB; } #pipe .pp-now .pp-k{ color:#D96A0E; } #pipe .pp-goal .pp-k{ color:#fff; }
+  #pipe .pp-t{ font-weight:800; font-size:16px; line-height:1.25; }
+  #pipe .pp-s{ font-size:12.5px; color:#5C6066; margin-top:5px; line-height:1.4; }
+  #pipe .pp-dark .pp-s, #pipe .pp-goal .pp-s{ color:rgba(255,255,255,0.78); }
+  #pipe .pp-arw{ align-self:center; color:#fff; font-weight:900; font-size:18px; }
+  #own{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(14px,2vw,22px); }
+  #own .ow-col{ border:1px solid rgba(255,255,255,0.18); border-radius:20px; padding:22px; }
+  #own .ow-now{ border-color:#F5811F; }
+  #own .ow-goal{ border-color:#4E92F8; background:rgba(78,146,248,0.08); }
+  #own .ow-h{ font-weight:800; font-size:21px; margin-bottom:16px; }
+  #own .ow-lane{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding:12px 0; border-top:1px solid rgba(255,255,255,0.12); }
+  #own .ow-who{ flex:0 0 auto; width:34px; text-align:center; font-weight:800; font-size:12px; padding:5px 0; border-radius:8px; background:#4E92F8; color:#0B0B0C; }
+  #own .ow-who.fe{ background:#fff; }
+  #own .ow-who.both{ width:44px; background:#F5811F; }
+  #own .ow-item{ background:rgba(255,255,255,0.1); border-radius:999px; padding:7px 12px; font-size:13.5px; font-weight:600; color:rgba(255,255,255,0.9); }
+  @media (max-width:820px){ #pipe .pp-row{ flex-direction:column; } #pipe .pp-arw{ transform:rotate(90deg); } #own{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<a href="index.html#work" class="backbtn">← Back</a>
+
+<header class="sec" style="padding-top:clamp(120px,15vw,180px);">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:20px;"><span class="dot">✦</span> DESIGN TOKENS · PRODUCT ENGINEERING · SNELSTART</div>
+    <h1 class="reveal" style="margin:0; font-weight:800; font-size:clamp(42px,7vw,104px); line-height:0.98; max-width:15ch;">Design that doesn't stop at the hand-off.</h1>
+    <p class="reveal" style="margin:28px 0 0; color:#3A3E44; font-weight:500; font-size:clamp(18px,1.9vw,25px); line-height:1.5; max-width:800px;">I'm reviewing and rebuilding snelstart's design system from a product-engineering angle. I designed the full token structure, gave it its own repository and set up the pipeline that ships it. Now the tokens are being linked to components. The goal is a front-end that the UX team owns together with the front-end team.</p>
+
+    <div class="reveal" style="display:flex; flex-wrap:wrap; gap:22px 46px; margin-top:44px;">
+      <div><div style="font-size:12px; font-weight:800; letter-spacing:0.14em; color:#9AA3A3;">ROLE</div><div style="font-weight:700; margin-top:6px;">UX/UI Designer · token structure &amp; pipeline</div></div>
+      <div><div style="font-size:12px; font-weight:800; letter-spacing:0.14em; color:#9AA3A3;">WORKED WITH</div><div style="font-weight:700; margin-top:6px;">Front-end team</div></div>
+      <div><div style="font-size:12px; font-weight:800; letter-spacing:0.14em; color:#9AA3A3;">STATUS</div><div class="live" style="margin-top:6px;"><span class="live-dot" style="background:#F5811F; animation:none;"></span> In progress</div></div>
+      <div><div style="font-size:12px; font-weight:800; letter-spacing:0.14em; color:#9AA3A3;">YEAR</div><div style="font-weight:700; margin-top:6px;">2026</div></div>
+    </div>
+
+    <div class="reveal" style="margin-top:clamp(44px,6vw,72px); border-radius:24px; overflow:hidden; background:linear-gradient(180deg,#2B7BF6,#5C9BFA); padding:clamp(24px,4.5vw,56px);">
+      <div id="pipe">
+        <div class="pp-row">
+          <div class="pp-node"><div class="pp-k">DESIGNED</div><div class="pp-t">Token structure</div><div class="pp-s">names and relations, set up from scratch</div></div>
+          <div class="pp-arw">→</div>
+          <div class="pp-node"><div class="pp-k">SOURCE OF TRUTH</div><div class="pp-t">Token repository</div><div class="pp-s">its own repo, versioned</div></div>
+          <div class="pp-arw">→</div>
+          <div class="pp-node pp-dark"><div class="pp-k">AUTOMATED</div><div class="pp-t">Pipeline</div><div class="pp-s">publishes tokens to code</div></div>
+          <div class="pp-arw">→</div>
+          <div class="pp-node pp-now"><div class="pp-k">NOW</div><div class="pp-t">Components</div><div class="pp-s">tokens being linked</div></div>
+          <div class="pp-arw">→</div>
+          <div class="pp-node pp-goal"><div class="pp-k">GOAL</div><div class="pp-t">Pages</div><div class="pp-s">built with complete code</div></div>
+        </div>
+      </div>
+      <div style="margin-top:18px; color:rgba(255,255,255,0.92); font-size:13.5px; font-weight:600; text-align:center;">From a design decision to the code, without retyping it along the way.</div>
+    </div>
+  </div>
+</header>
+
+<section class="sec" style="padding-top:0;">
+  <div class="wrap">
+    <div class="grid2 reveal" style="display:grid; grid-template-columns:0.85fr 1.15fr; gap:clamp(28px,5vw,80px); align-items:start;">
+      <div>
+        <div class="eyebrow" style="margin-bottom:16px;"><span class="dot">✦</span> WHY IT MATTERED</div>
+        <h2 style="margin:0; font-weight:800; font-size:clamp(30px,3.8vw,52px); line-height:1.06;">A design system only counts where users see it.</h2>
+      </div>
+      <div style="color:#3A3E44; font-size:clamp(16px,1.4vw,19px); line-height:1.7;">
+        <p style="margin:0 0 18px;">Users never see the design file. They see the product, and the product is code. As long as design lives in one place and code in another, every decision has to be translated by hand on its way to the product.</p>
+        <p style="margin:0 0 18px;">At snelstart, even a small visual change to an existing component was front-end work. That takes developer time for something that isn't really a development question, and it keeps designers one step away from the product they design.</p>
+        <p style="margin:0;">So I approached the design system review from the code side. Not a tidier Figma library, but a system that design and front-end both build on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:#F5F8FF;">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">✦</span> WHAT I SET UP</div>
+    <h2 class="reveal" style="margin:0 0 clamp(40px,6vw,64px); font-weight:800; font-size:clamp(28px,3.8vw,50px); line-height:1.06; max-width:760px;">Tokens first, then everything that uses them.</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:clamp(16px,2.5vw,26px);">
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#2E7DF7; font-size:15px; margin-bottom:8px;">01</div><div style="font-weight:800; font-size:19px;">A review</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">Of the existing design system, from a product-engineering point of view: what lives in design, what lives in code.</div></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#2E7DF7; font-size:15px; margin-bottom:8px;">02</div><div style="font-weight:800; font-size:19px;">The token structure</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">I designed and set up the full structure: how tokens are named and how they relate to each other.</div></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#2E7DF7; font-size:15px; margin-bottom:8px;">03</div><div style="font-weight:800; font-size:19px;">A repository of their own</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">Tokens live in their own repository, not inside one app or one design file.</div></div>
+      <div class="reveal" style="background:#fff; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#2E7DF7; font-size:15px; margin-bottom:8px;">04</div><div style="font-weight:800; font-size:19px;">A pipeline</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">I set up the pipeline that takes tokens from the repository to where the code uses them.</div></div>
+      <div class="reveal" style="background:#fff; border:1px dashed #C7D6EF; border-radius:20px; padding:26px; box-shadow:0 14px 40px rgba(20,40,80,0.08);"><div style="font-weight:800; color:#F5811F; font-size:15px; margin-bottom:8px;">NOW</div><div style="font-weight:800; font-size:19px;">Linking components</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">From the repository, the tokens are being linked to the existing components.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">✦</span> KEY DECISIONS</div>
+    <h2 class="reveal" style="margin:0 0 clamp(44px,6vw,72px); font-weight:800; font-size:clamp(28px,4vw,52px); line-height:1.06; max-width:760px;">The calls that shaped it.</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr)); gap:clamp(36px,5vw,64px) clamp(28px,5vw,80px);">
+      <div class="reveal"><div style="color:#2B7BF6; font-weight:800; font-size:15px; margin-bottom:10px;">Decision 01</div><h3 style="margin:0 0 12px; font-weight:800; font-size:clamp(22px,2.4vw,30px);">Tokens before components</h3><p style="margin:0; color:#3A3E44; font-size:16px; line-height:1.65;">A colour or a spacing value should be one change in one place, not a search through screens. Getting the structure right first is what makes every later step safe to automate.</p></div>
+      <div class="reveal"><div style="color:#2B7BF6; font-weight:800; font-size:15px; margin-bottom:10px;">Decision 02</div><h3 style="margin:0 0 12px; font-weight:800; font-size:clamp(22px,2.4vw,30px);">A repository, not a file</h3><p style="margin:0; color:#3A3E44; font-size:16px; line-height:1.65;">A repository gives tokens version history, review and one place that design and front-end both trust. It doesn't belong to one app or one tool.</p></div>
+      <div class="reveal"><div style="color:#2B7BF6; font-weight:800; font-size:15px; margin-bottom:10px;">Decision 03</div><h3 style="margin:0 0 12px; font-weight:800; font-size:clamp(22px,2.4vw,30px);">A pipeline, not a hand-off</h3><p style="margin:0; color:#3A3E44; font-size:16px; line-height:1.65;">Once a pipeline publishes the tokens, a design decision doesn't need a developer to retype it before it reaches the product.</p></div>
+      <div class="reveal"><div style="color:#2B7BF6; font-weight:800; font-size:15px; margin-bottom:10px;">Decision 04</div><h3 style="margin:0 0 12px; font-weight:800; font-size:clamp(22px,2.4vw,30px);">New components stay with front-end, for now</h3><p style="margin:0; color:#3A3E44; font-size:16px; line-height:1.65;">A new component carries behaviour, planning and a question of who owns what. That isn't ours to take yet. Changing what exists is a different job from deciding what should exist, so I kept the scope to the first.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:#0B0B0C; color:#fff;">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="color:#fff; margin-bottom:14px;"><span class="dot" style="color:#4E92F8;">✦</span> WHERE IT'S GOING</div>
+    <h2 class="reveal" style="margin:0 0 18px; color:#fff; font-weight:800; font-size:clamp(28px,4vw,52px); line-height:1.06; max-width:780px;">A front-end we own together.</h2>
+    <p class="reveal" style="margin:0 0 clamp(44px,6vw,64px); color:rgba(255,255,255,0.78); font-size:clamp(16px,1.4vw,19px); line-height:1.65; max-width:820px;">The long-term goal is that the UX team owns the front-end together with the front-end team. Who does what changes, step by step.</p>
+    <div id="own" class="reveal">
+      <div class="ow-col">
+        <div class="ow-h">Before</div>
+        <div class="ow-lane"><span class="ow-who">UX</span><span class="ow-item">Designs in Figma</span></div>
+        <div class="ow-lane"><span class="ow-who fe">FE</span><span class="ow-item">Components and pages in code</span><span class="ow-item">Backend</span></div>
+      </div>
+      <div class="ow-col ow-now">
+        <div class="ow-h">Now</div>
+        <div class="ow-lane"><span class="ow-who">UX</span><span class="ow-item">Token structure, repository and pipeline</span></div>
+        <div class="ow-lane"><span class="ow-who both">BOTH</span><span class="ow-item">Linking tokens to components</span></div>
+        <div class="ow-lane"><span class="ow-who fe">FE</span><span class="ow-item">New components</span><span class="ow-item">Pages</span><span class="ow-item">Backend</span></div>
+      </div>
+      <div class="ow-col ow-goal">
+        <div class="ow-h">Goal</div>
+        <div class="ow-lane"><span class="ow-who">UX</span><span class="ow-item">Change tokens and existing components</span><span class="ow-item">Build pages until the code is complete</span></div>
+        <div class="ow-lane"><span class="ow-who fe">FE</span><span class="ow-item">Connect to the backend</span><span class="ow-item">New components</span></div>
+      </div>
+    </div>
+    <div class="reveal" style="margin-top:clamp(44px,6vw,64px);"><a href="Snelstart-Relations.html" class="cta on-dark"><span>Next case — Relations, reimagined</span><span class="ar">→</span></a></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="reveal" style="background:linear-gradient(135deg,#EAF1FF,#DCE9FF); border-radius:24px; padding:clamp(30px,4.5vw,64px);">
+      <div class="eyebrow" style="margin-bottom:16px;"><span class="dot">✦</span> HOW IT CONNECTS</div>
+      <h2 style="margin:0 0 18px; font-weight:800; font-size:clamp(26px,3.4vw,46px); line-height:1.08; max-width:20ch;">The same idea as the AI flow, one layer down.</h2>
+      <p style="margin:0; color:#3A3E44; font-size:clamp(16px,1.4vw,19px); line-height:1.65; max-width:840px;">In the <a href="Snelstart-AI-Strategy.html" style="color:#2B6FD0; font-weight:700;">Ask-a-designer flow</a>, product owners get a designer to ask, and a designer approves what ships. Here, designers get a direct line into the code, and the front-end team keeps what is theirs. In both cases the work is deciding who owns which decision, and making the hand-over cheap.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:#F5F8FF;">
+  <div class="wrap">
+    <div class="reveal eyebrow" style="margin-bottom:14px;"><span class="dot">✦</span> HOW WE'LL KNOW</div>
+    <h2 class="reveal" style="margin:0 0 clamp(34px,4vw,50px); font-weight:800; font-size:clamp(28px,4vw,52px); line-height:1.06; max-width:760px;">Still in progress. This is what I want to measure.</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:clamp(16px,2.5vw,26px);">
+      <div class="reveal" style="background:#fff; border:1px dashed #C7D6EF; border-radius:20px; padding:26px;"><div style="font-weight:800; font-size:18px;">Time to production</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">From a design change to the same change live in the product.</div></div>
+      <div class="reveal" style="background:#fff; border:1px dashed #C7D6EF; border-radius:20px; padding:26px;"><div style="font-weight:800; font-size:18px;">Visual-only tickets</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">How much front-end time still goes to changes that are only about how something looks.</div></div>
+      <div class="reveal" style="background:#fff; border:1px dashed #C7D6EF; border-radius:20px; padding:26px;"><div style="font-weight:800; font-size:18px;">Drift</div><div style="color:#5C6066; font-size:15px; margin-top:8px; line-height:1.55;">Places where the design and the product no longer match.</div></div>
+    </div>
+  </div>
+</section>
+
+<footer style="position:relative; background:#2B7BF6; padding:clamp(70px,10vw,120px) 0 0; overflow:hidden;">
+  <div class="wrap" style="position:relative; z-index:2;">
+    <div class="reveal" style="display:flex; justify-content:space-between; align-items:center; gap:40px; flex-wrap:wrap;">
+      <h2 style="margin:0; color:#fff; font-weight:800; font-size:clamp(34px,5.4vw,80px); line-height:0.98;">lets <span class="rotword" style="font-family:'Kaushan Script',cursive; font-weight:400; display:inline-block; transition:opacity .3s ease;">build</span><br>something great together.</h2>
+    </div>
+    <div class="reveal" style="display:flex; gap:60px; flex-wrap:wrap; margin-top:clamp(40px,6vw,70px);">
+      <div><div style="color:rgba(255,255,255,0.7); font-size:14px; font-weight:700;">Email</div><a href="mailto:nadja.gurk@icloud.com" style="color:#fff; font-weight:700; font-size:clamp(18px,1.8vw,22px); text-decoration:none;">nadja.gurk@icloud.com</a></div>
+      <div><div style="color:rgba(255,255,255,0.7); font-size:14px; font-weight:700;">LinkedIn</div><a href="https://www.linkedin.com/in/nadja-gurk-197051198/" target="_blank" rel="noopener" style="color:#fff; font-weight:700; font-size:clamp(18px,1.8vw,22px); text-decoration:none;">Nadja Gurk</a></div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.25); margin-top:clamp(40px,6vw,70px); padding:24px 0; color:rgba(255,255,255,0.8); font-size:14px; font-weight:600;">© 2026 Nadja Gurk</div>
+  </div>
+  <div aria-hidden="true" style="position:absolute; left:50%; bottom:-3.5vw; transform:translateX(-50%); font-weight:900; font-size:42vw; line-height:0.72; letter-spacing:-0.05em; color:rgba(255,255,255,0.13); white-space:nowrap; pointer-events:none; user-select:none;">NADJA</div>
+</footer>
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){if(getComputedStyle(el).opacity==='0')el.classList.add('in');});},2600);
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var el=document.querySelector(a.getAttribute('href'));if(el){e.preventDefault();window.scrollTo({top:el.getBoundingClientRect().top+scrollY-80,behavior:'smooth'});}});});
+  var words=['build','design','create','ship'],ri=0;
+  setInterval(function(){var el=document.querySelector('.rotword');if(!el)return;ri=(ri+1)%words.length;el.style.opacity='0';setTimeout(function(){el.textContent=words[ri];el.style.opacity='1';},300);},2400);
+})();
+</script>
+</body>
+</html>
