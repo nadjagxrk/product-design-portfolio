@@ -14,12 +14,12 @@
       "nl": "Contact"
     },
     "hero_hi": {
-      "en": "Nadja Gurk",
-      "nl": "Nadja Gurk"
+      "en": "Hey, I'm <span style=\"font-weight: 800;\">Nadja Gurk</span>",
+      "nl": "Hoi, ik ben <span style=\"font-weight: 800;\">Nadja Gurk</span>"
     },
     "hero_tag": {
-      "en": "Product designer for complex, high-stakes processes — mostly accounting, tax and KYC. I ground the work in research, take it all the way into the code, and design how people stay in charge when <span style=\"font-weight: 800;\">AI</span> does the producing.",
-      "nl": "Productdesigner voor complexe processen waar veel op het spel staat — vooral boekhouding, belasting en KYC. Ik onderbouw het werk met onderzoek, breng het tot in de code en ontwerp hoe mensen de regie houden als <span style=\"font-weight: 800;\">AI</span> het maakwerk doet."
+      "en": "I turn complex, high-stakes processes — accounting, tax, KYC — into clear, trustworthy products. Research-led, AI-fluent, and taken all the way into the code.",
+      "nl": "Ik maak van complexe processen waar veel op het spel staat — boekhouding, belasting, KYC — heldere, betrouwbare producten. Onderzoeksgedreven, AI-vaardig, en tot in de code doorgevoerd."
     },
     "based_in": {
       "en": "BASED IN",
